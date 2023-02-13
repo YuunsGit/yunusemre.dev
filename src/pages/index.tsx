@@ -295,7 +295,7 @@ export default function Home() {
         className={`${inter.variable} bg-primary-300 py-6 text-center font-sans`}
       >
         <a
-          href=""
+          href="https://github.com/YuunsGit/yuuns-tech"
           className="text-secondary duration-100 hover:text-primary-500"
         >
           Designed & Built by Yunus Emre Kepenek

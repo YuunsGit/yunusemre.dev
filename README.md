@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://user-images.githubusercontent.com/42357900/218587106-9e98daa6-14bf-4244-9b04-781bdc39786b.svg" width="250" />
+  <a href="https://www.yuuns.tech" target="_blank"><img alt="Logo" src="https://user-images.githubusercontent.com/42357900/218587106-9e98daa6-14bf-4244-9b04-781bdc39786b.svg" width="250" /></a>
 </div>
 <h1 align="center">
   yuuns.tech - v1

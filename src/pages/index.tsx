@@ -70,14 +70,14 @@ export default function Home() {
           property="og:description"
           content="Yunus Emre's portfolio website"
         />
-        <meta name="theme-color" content="#7B9C8A"></meta>
+        <meta name="theme-color" content="#7B9C8A" />
       </Head>
       <header
         className={`${inter.variable} mx-auto my-4 flex h-16 w-4/5 select-none flex-col items-center justify-center font-sans sm:h-32 md:my-0 md:h-24 md:flex-row md:justify-between`}
       >
         <div className="mx-auto flex h-full items-center justify-start gap-x-2 text-3xl font-bold text-primary-400 md:ml-0">
           <CodeBracketSquareIcon className="h-10 w-10" />
-          <h1>ynsemr</h1>
+          <h1>yuuns.tech</h1>
         </div>
         <ul className="mx-auto hidden h-full items-center justify-center gap-x-20 font-semibold text-primary-500 sm:flex md:mr-0">
           <li className="relative after:absolute after:-bottom-2 after:left-0 after:h-1 after:w-1/4 after:origin-left after:scale-x-0 after:rounded-full after:bg-primary-500 after:duration-150 after:content-[''] hover:after:scale-x-100">
@@ -315,11 +315,9 @@ export default function Home() {
           href="https://github.com/YuunsGit/yuuns-tech"
           rel="noreferrer"
           target="_blank"
-          className="text-secondary duration-100"
+          className="relative text-sm text-secondary duration-100 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-secondary after:duration-150 after:content-[''] hover:after:scale-x-100 sm:text-base"
         >
-          <code className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-secondary after:duration-150 after:content-[''] hover:after:scale-x-100">
-            Designed & Built by Yunus Emre Kepenek
-          </code>
+          <code>Designed & Built by Yunus Emre Kepenek</code>
         </a>
       </footer>
     </>

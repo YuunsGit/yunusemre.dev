@@ -31,10 +31,7 @@ module.exports = {
           500: "#524848",
         },
       },
-      backgroundImage: {
-        "top-wave": "url('../../public/TopWave.svg')",
-      },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [],
 };

@@ -181,7 +181,7 @@ export default function Home() {
                 </p>
                 <ul className="mx-auto grid w-full grid-cols-2 md:mx-0 md:w-3/4">
                   <li className="before:mr-2 before:content-['▸']">
-                    JavaScript (ES6+)
+                    JavaScript
                   </li>
                   <li className="before:mr-2 before:content-['▸']">
                     TypeScript
@@ -341,7 +341,7 @@ export default function Home() {
                 <p>
                   I&apos;m always looking for new opportunities and my inbox is
                   always open. Whether you have a question or just want to say
-                  hi, I’ll try my best to get back to you!
+                  hi, I&apos;ll try my best to get back to you!
                 </p>
                 <a
                   href="mailto:yekepenek2002@hotmail.com"

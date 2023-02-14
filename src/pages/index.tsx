@@ -152,6 +152,14 @@ export default function Home() {
             <span className="text-lg font-semibold text-ternary-400 sm:text-2xl lg:text-3xl">
               Full Stack Engineer & Designer
             </span>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="/Resume.pdf"
+              className="mx-auto mt-6 inline-block rounded border border-opacity-50 bg-primary-100 px-4 py-2 text-base sm:hidden"
+            >
+              Resume
+            </a>
           </article>
         </div>
         <Image

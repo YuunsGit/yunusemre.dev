@@ -64,7 +64,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content="Yuuns Tech" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.yuuns.tech/" />
+        <meta property="og:url" content="https://www.yuuns.tech/Me.png" />
         <meta property="og:image" content="../../public/Me.svg" />
         <meta
           property="og:description"

@@ -5,7 +5,7 @@ import { Inter } from "@next/font/google";
 import Social from "./Social";
 
 import {
-  CommandLineIcon,
+  CodeBracketSquareIcon,
   ArrowRightCircleIcon,
 } from "@heroicons/react/24/solid";
 import { FaceSmileIcon } from "@heroicons/react/24/outline";
@@ -21,7 +21,7 @@ import Instagram from "../../public/Instagram.svg";
 import LinkedIn from "../../public/LinkedIn.svg";
 import ArtStation from "../../public/ArtStation.svg";
 import GitHub from "../../public/GitHub.svg";
-import HeMan from "../../public/Heman.png";
+import HeMan from "../../public/Heman.svg";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -55,7 +55,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Yuuns Tech</title>
+        <title>Yunus Emre Kepenek</title>
         <meta
           name="description"
           content="Yunus Emre Kepenek portfolio website"
@@ -67,7 +67,7 @@ export default function Home() {
         className={`${inter.variable} mx-auto my-4 flex h-16 w-4/5 select-none flex-col items-center justify-center font-sans sm:h-32 md:my-0 md:h-24 md:flex-row md:justify-between`}
       >
         <div className="mx-auto flex h-full items-center justify-start gap-x-2 text-3xl font-bold text-primary-400 md:ml-0">
-          <CommandLineIcon className="h-10 w-10" />
+          <CodeBracketSquareIcon className="h-10 w-10" />
           <h1>ynsemr</h1>
         </div>
         <ul className="mx-auto hidden h-full items-center justify-center gap-x-20 font-semibold text-primary-500 sm:flex md:mr-0">
@@ -81,7 +81,7 @@ export default function Home() {
             <a href="#contact">Contact</a>
           </li>
           <li className="relative after:absolute after:-bottom-2 after:left-0 after:h-1 after:w-1/4 after:origin-left after:scale-x-0 after:rounded-full after:bg-primary-500 after:duration-150 after:content-[''] hover:after:scale-x-100">
-            <a rel="noreferrer" target="_blank" href="/Resume.pdf">
+            <a rel="noreferrer" target="_blank" href="/resume.pdf">
               Resume
             </a>
           </li>
@@ -102,16 +102,16 @@ export default function Home() {
             </div>
           </figure>
           <article className="text-center lg:text-left">
-            <h1 className="text-3xl sm:text-6xl lg:text-7xl">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl">
               <span className="font-bold text-ternary-400">Hi, I&apos;m</span>
               <br />
-              <span className="relative font-black text-primary-400 after:absolute after:-bottom-1 after:left-0 after:h-3 after:w-full after:origin-top after:scale-y-0 after:bg-primary-400 after:duration-150 after:content-[''] group-hover:after:scale-y-100">
+              <span className="relative font-black text-primary-400 after:absolute after:-bottom-1 after:left-0 after:h-3 after:w-full after:origin-top after:scale-y-0 after:bg-primary-400 after:duration-150 after:content-[''] sm:group-hover:after:scale-y-100">
                 Yunus Emre
               </span>
               <br />
-              <span className="text-base font-semibold text-ternary-400 sm:text-2xl lg:text-3xl">
+              <span className="text-lg font-semibold text-ternary-400 sm:text-2xl lg:text-3xl">
                 <span>Junior </span>
-                <span className="relative after:absolute after:left-0 after:-bottom-7 after:origin-top after:scale-y-0 after:duration-150 after:content-['Designer'] group-hover:content-[''] group-hover:after:scale-y-100">
+                <span className="relative after:absolute after:left-0 after:-bottom-7 after:origin-top after:scale-y-0 after:duration-150 after:content-['Designer'] sm:group-hover:content-[''] sm:group-hover:after:scale-y-100">
                   Full Stack Engineer
                 </span>
               </span>
@@ -123,16 +123,16 @@ export default function Home() {
           alt="Wave image at the top"
           className="min-w-full select-none"
         />
-        <div className="space-y-56 bg-primary-300 py-40">
+        <div className="space-y-32 bg-primary-300 py-24 md:space-y-56 md:py-40">
           <div>
             <h1
               id="about"
-              className="mx-auto mb-20 text-center text-6xl font-bold text-secondary"
+              className="mx-auto mb-10 text-center text-4xl font-bold text-secondary sm:mb-20 sm:text-6xl"
             >
               About Me
             </h1>
-            <div className="mx-auto flex w-7/12 items-center justify-center space-x-10 text-secondary">
-              <article className="w-1/2 space-y-3">
+            <div className="mx-auto flex w-9/12 flex-col-reverse items-center justify-center gap-y-12 text-center text-secondary md:w-7/12 md:text-left lg:flex-row lg:gap-y-0 lg:space-x-10">
+              <article className="space-y-3 lg:w-1/2">
                 <p>
                   I am a software engineering student with a specialization in
                   web development. I am passionate about creating intuitive and
@@ -143,7 +143,7 @@ export default function Home() {
                   Here are a few technologies I&apos;ve been working with
                   recently:
                 </p>
-                <ul className="grid w-3/4 grid-cols-2">
+                <ul className="mx-auto grid w-full grid-cols-2 md:mx-0 md:w-3/4">
                   <li className="before:mr-2 before:content-['▸']">
                     JavaScript
                   </li>
@@ -165,22 +165,22 @@ export default function Home() {
           <div>
             <h1
               id="projects"
-              className="mx-auto mb-20 text-center text-6xl font-bold text-secondary"
+              className="mx-auto mb-10 text-center text-4xl font-bold text-secondary md:mb-20 md:text-6xl"
             >
               Some Things I’ve Built
             </h1>
-            <div className="z-10 mx-auto flex w-7/12 flex-col space-y-5">
+            <div className="z-10 mx-auto flex w-10/12 flex-col space-y-5 lg:w-7/12">
               <div className="group relative">
                 <Image
                   src={Sinbadude}
                   alt="Mascot of Sinbad DigiBox"
-                  className="absolute -left-44 -top-32 h-4/5 -rotate-12 "
+                  className="absolute -left-44 -top-32 hidden h-4/5 -rotate-12 lg:block"
                 />
                 <a
                   href="https://www.sinbaddigibox.com"
                   target="_blank"
                   rel="noreferrer"
-                  className="relative z-10 flex justify-between space-x-20 rounded-3xl bg-sky-50 p-12 duration-200 hover:bg-sky-100"
+                  className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-sky-50 p-12 text-center duration-200 hover:bg-sky-100 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left"
                 >
                   <article>
                     <h1 className="text-2xl font-extrabold">Sinbad DigiBox</h1>
@@ -194,21 +194,24 @@ export default function Home() {
                     <p className="mt-3 before:mr-2 before:content-['▸']">
                       Developed the open-source website using <b>React</b>.
                     </p>
+                    <a className="mt-3 block underline md:hidden">
+                      Click here to visit.
+                    </a>
                   </article>
                   <Image
                     src={Sinbad}
                     alt="Sinbad DigiBox logo"
-                    className="h-auto w-1/3"
+                    className="h-auto w-full md:w-1/3"
                   />
                 </a>
-                <ArrowRightCircleIcon className="absolute right-0 top-0 bottom-0 z-0 my-auto h-14 text-sky-100 duration-200 group-hover:translate-x-16" />
+                <ArrowRightCircleIcon className="absolute right-0 top-0 bottom-0 z-0 my-auto hidden h-14 text-sky-100 duration-200 group-hover:translate-x-16 md:block" />
               </div>
               <div className="group relative">
                 <a
                   href="https://conversions.yuuns.tech/"
                   target="_blank"
                   rel="noreferrer"
-                  className="relative z-10 flex justify-between space-x-20 rounded-3xl bg-stone-800 p-12 text-secondary duration-200 hover:bg-stone-900"
+                  className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-stone-800 p-12 text-center text-secondary duration-200 hover:bg-stone-900 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left"
                 >
                   <article>
                     <h1 className="text-2xl font-extrabold">Conversions</h1>
@@ -221,59 +224,64 @@ export default function Home() {
                     <p className="mt-3 before:mr-2 before:content-['▸']">
                       Developed the open-source website using <b>React</b>.
                     </p>
+                    <a className="mt-3 block underline md:hidden">
+                      Click here to visit.
+                    </a>
                   </article>
                   <Image
                     src={Conversions}
                     alt="Conversions logo"
-                    className="h-auto w-1/3"
+                    className="h-auto w-full md:w-1/3"
                   />
                 </a>
-                <ArrowRightCircleIcon className="absolute right-0 top-0 bottom-0 z-0 my-auto h-14 text-stone-900 duration-200 group-hover:translate-x-16" />
+                <ArrowRightCircleIcon className="absolute right-0 top-0 bottom-0 z-0 my-auto hidden h-14 text-stone-900 duration-200 group-hover:translate-x-16 md:block" />
               </div>
               <div className="group relative">
                 <a
                   href="https://github.com/YuunsGit/legionary"
                   target="_blank"
                   rel="noreferrer"
-                  className="relative z-10 flex justify-between space-x-20 rounded-3xl bg-cyan-50 p-12 text-ternary-500 duration-200 hover:bg-cyan-100"
+                  className="relative z-10 flex flex-col-reverse justify-between gap-x-0 gap-y-8 rounded-3xl bg-stone-100 p-12 text-center text-ternary-500 duration-200 hover:bg-stone-200 md:flex-row  md:gap-x-20 md:gap-y-0 md:text-left"
                 >
                   <article>
                     <h1 className="text-2xl font-extrabold">Legionary</h1>
                     <h2 className="text-xl font-semibold">Author</h2>
                     <br />
                     <p>
-                      Discord bot developed using Discord.js library on Node.js
-                      environment. Capable of various operations such as
+                      Discord bot that is capable of various operations such as
                       spell-checking, reactions, essential commands and little
                       games.
                     </p>
                     <p className="mt-3 before:mr-2 before:content-['▸']">
                       Developed the open-source bot using <b>Node.js</b>.
                     </p>
+                    <a className="mt-3 block underline md:hidden">
+                      Click here to visit.
+                    </a>
                   </article>
                   <Image
                     src={HeMan}
-                    alt="Conversions logo"
-                    className="max-w-1/4 max-h-auto rounded-2xl"
+                    alt="Legionary logo"
+                    className="my-auto w-full rounded-2xl md:w-1/3"
                   />
                 </a>
-                <ArrowRightCircleIcon className="absolute right-0 top-0 bottom-0 z-0 my-auto h-14 text-cyan-100 duration-200 group-hover:translate-x-16" />
+                <ArrowRightCircleIcon className="absolute right-0 top-0 bottom-0 z-0 my-auto hidden h-14 text-stone-200 duration-200 group-hover:translate-x-16 md:block" />
               </div>
             </div>
           </div>
           <div>
             <h1
               id="contact"
-              className="mx-auto mb-20 text-center text-6xl font-bold text-secondary"
+              className="mx-auto mb-10 text-center text-4xl font-bold text-secondary md:mb-20 md:text-6xl"
             >
               Get In Touch
             </h1>
-            <div className="mx-auto flex w-7/12 items-center justify-center space-x-20 text-secondary">
+            <div className="mx-auto flex w-7/12 flex-col-reverse items-center justify-center gap-y-12 gap-x-20 text-secondary md:flex-row">
               <Image
                 src={Letter}
                 alt="A picture of a laptop near a cup of coffee"
               />
-              <article className="w-1/2 space-y-6 text-lg">
+              <article className="w-full space-y-6 text-center text-base md:w-1/2 md:text-left md:text-lg">
                 <p>
                   I&apos;m always looking for new opportunities and my inbox is
                   always open. Whether you have a question or just want to say
@@ -296,9 +304,13 @@ export default function Home() {
       >
         <a
           href="https://github.com/YuunsGit/yuuns-tech"
-          className="text-secondary duration-100 hover:text-primary-500"
+          rel="noreferrer"
+          target="_blank"
+          className="text-secondary duration-100"
         >
-          Designed & Built by Yunus Emre Kepenek
+          <code className="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-secondary after:duration-150 after:content-[''] hover:after:scale-x-100">
+            Designed & Built by Yunus Emre Kepenek
+          </code>
         </a>
       </footer>
     </>

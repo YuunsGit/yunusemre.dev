@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
+import { Overpass, Space_Grotesk } from "@next/font/google";
 
 import Social from "./Social";
 
@@ -25,9 +25,14 @@ import ArtStation from "../../public/ArtStation.svg";
 import GitHub from "../../public/GitHub.svg";
 import HeMan from "../../public/Heman.svg";
 
-const inter = Inter({
+const overpass = Overpass({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-overpass",
+});
+
+const grotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-grotesk",
 });
 
 const socials: { name: string; icon: React.FC; link: string }[] = [
@@ -95,13 +100,13 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
       </Head>
       <header
-        className={`${inter.variable} mx-auto my-4 flex h-16 w-4/5 select-none flex-col items-center justify-center font-sans sm:h-32 md:my-0 md:h-24 md:flex-row md:justify-between`}
+        className={`${overpass.variable} mx-auto my-4 flex h-16 w-4/5 select-none flex-col items-center justify-center font-sans sm:h-32 lg:my-0 lg:h-24 lg:flex-row lg:justify-between`}
       >
-        <div className="mx-auto flex h-full items-center justify-start gap-x-2 text-3xl font-bold text-primary-400 md:ml-0">
+        <div className="mx-auto flex h-full items-center justify-start gap-x-2 text-3xl font-extrabold text-primary-400 lg:ml-0">
           <CodeBracketSquareIcon className="h-10 w-10" />
           <h1>yuuns.tech</h1>
         </div>
-        <ul className="mx-auto hidden h-full items-center justify-center gap-x-20 font-semibold text-primary-300 sm:flex md:mr-0">
+        <ul className="mx-auto hidden h-full items-center justify-center gap-x-20 font-semibold text-primary-300 sm:flex lg:mr-0">
           <li className="relative before:pointer-events-none before:absolute before:left-0 before:top-0 before:w-0 before:overflow-hidden before:whitespace-nowrap before:text-primary-500 before:duration-200 before:content-['About_me'] hover:before:w-full">
             <a href="#about">About me</a>
           </li>
@@ -118,7 +123,7 @@ export default function Home() {
           </li>
         </ul>
       </header>
-      <main className={`${inter.variable} font-sans`}>
+      <main className={`${overpass.variable} font-sans`}>
         <div className="my-12 mx-auto flex w-4/5 flex-col items-center justify-center gap-x-20 sm:my-20 md:my-32 lg:flex-row">
           <div className="mb-10 w-2/3 space-y-6 sm:w-80 lg:mb-0 xl:w-96">
             <figure className="group relative">
@@ -142,16 +147,26 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <article className="text-center text-4xl sm:text-6xl lg:text-left lg:text-7xl">
-            <span className="font-bold text-ternary-400">Hi, I&apos;m</span>
+          <article className="text-center lg:text-left">
+            <h1>
+              <span className="text-4xl font-bold text-ternary-400 sm:text-6xl lg:text-7xl">
+                Hi, I&apos;m
+              </span>
+              <br />
+              <span className="relative text-4xl font-black text-primary-400 sm:text-6xl lg:text-7xl">
+                Yunus Emre
+              </span>
+            </h1>
             <br />
-            <span className="relative font-black text-primary-400">
-              Yunus Emre
-            </span>
-            <br />
-            <span className="text-lg font-semibold text-ternary-400 sm:text-2xl lg:text-3xl">
-              Full Stack Engineer & Designer
-            </span>
+            <h2>
+              <span className="text-lg font-semibold text-ternary-400 sm:text-2xl lg:text-3xl">
+                Full Stack Engineer
+              </span>
+              <br />
+              <span className="text-lg font-semibold text-ternary-400 sm:text-2xl lg:text-3xl">
+                Designer
+              </span>
+            </h2>
             <a
               rel="noopener noreferrer"
               target="_blank"
@@ -171,12 +186,12 @@ export default function Home() {
           <div>
             <h1
               id="about"
-              className="mx-auto mb-10 text-center text-4xl font-bold text-secondary sm:mb-20 sm:text-6xl"
+              className="mx-auto mb-10 w-10/12 text-center text-4xl font-bold text-secondary sm:mb-20 sm:text-6xl"
             >
               About Me
             </h1>
             <div className="mx-auto flex w-9/12 flex-col-reverse items-center justify-center gap-y-12 text-center text-secondary md:w-7/12 md:text-left lg:flex-row lg:gap-y-0 lg:space-x-10">
-              <article className="space-y-3 lg:w-1/2">
+              <article className="space-y-3 sm:text-lg lg:w-1/2">
                 <p>
                   I am a software engineering student with a specialization in
                   web development. I am passionate about creating intuitive and
@@ -219,7 +234,7 @@ export default function Home() {
           <div>
             <h1
               id="projects"
-              className="mx-auto mb-10 text-center text-4xl font-bold text-secondary md:mb-20 md:text-6xl"
+              className="mx-auto mb-10 w-10/12 text-center text-4xl font-bold text-secondary md:mb-20 md:text-6xl"
             >
               Some Things I&apos;ve Built
             </h1>
@@ -326,7 +341,7 @@ export default function Home() {
           <div>
             <h1
               id="contact"
-              className="mx-auto mb-10 text-center text-4xl font-bold text-secondary md:mb-20 md:text-6xl"
+              className="mx-auto mb-10 w-10/12 text-center text-4xl font-bold text-secondary md:mb-20 md:text-6xl"
             >
               Get In Touch
             </h1>
@@ -364,7 +379,7 @@ export default function Home() {
         </div>
       </main>
       <footer
-        className={`${inter.variable} bg-primary-300 py-6 text-center font-sans`}
+        className={`${grotesk.variable} bg-primary-300 py-6 text-center font-sans`}
       >
         <a
           href="https://github.com/YuunsGit/yuuns-tech"

@@ -12,7 +12,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-inter)", ...fontFamily.sans],
+        sans: ["var(--font-overpass)", ...fontFamily.sans],
+        mono: ["var(--font-grotesk)", ...fontFamily.mono],
       },
       colors: {
         primary: {

@@ -17,6 +17,7 @@ import Sinbadude from "../../public/Sinbadude.svg";
 import Conversions from "../../public/Conversions.svg";
 import Letter from "../../public/Letter.svg";
 
+import Illustrator from "../../public/Illustrator.svg";
 import Instagram from "../../public/Instagram.svg";
 import LinkedIn from "../../public/LinkedIn.svg";
 import ArtStation from "../../public/ArtStation.svg";
@@ -98,18 +99,28 @@ export default function Home() {
       </header>
       <main className={`${inter.variable} font-sans`}>
         <div className="my-12 mx-auto flex w-4/5 flex-col items-center justify-center gap-x-20 sm:my-20 md:my-32 lg:flex-row">
-          <figure className="mb-10 w-2/3 space-y-6 sm:w-80 lg:mb-0 xl:w-96">
-            <Image
-              src={HeroImage}
-              alt="Picture of the author"
-              className="select-none"
-            />
+          <div className="mb-10 w-2/3 space-y-6 sm:w-80 lg:mb-0 xl:w-96">
+            <figure className="group relative">
+              <Image
+                src={HeroImage}
+                alt="Picture of the author"
+                className="z-10 select-none"
+              />
+              <div className="absolute -top-7 right-0 left-0 z-0 mx-auto hidden h-20 text-center text-primary-400 opacity-0 duration-200 md:block md:group-hover:-translate-y-1 md:group-hover:opacity-100 ">
+                Made with{" "}
+                <Image
+                  src={Illustrator}
+                  alt="Adobe Illustrator logo"
+                  className="mr-0 inline h-5 w-5"
+                />
+              </div>
+            </figure>
             <div className="z-10 flex select-none justify-center gap-x-4">
               {socials.map(({ name, icon, link }) => (
                 <Social name={name} icon={icon} link={link} key={name} />
               ))}
             </div>
-          </figure>
+          </div>
           <article className="text-center text-4xl sm:text-6xl lg:text-left lg:text-7xl">
             <span className="font-bold text-ternary-400">Hi, I&apos;m</span>
             <br />
@@ -160,10 +171,20 @@ export default function Home() {
                   <li className="before:mr-2 before:content-['▸']">Astro</li>
                 </ul>
               </article>
-              <Image
-                src={Laptop}
-                alt="A picture of a laptop near a cup of coffee"
-              />
+              <figure className="group relative">
+                <Image
+                  src={Laptop}
+                  alt="A picture of a laptop near a cup of coffee"
+                />
+                <div className="absolute -top-7 right-0 left-0 z-0 mx-auto hidden h-20 text-center text-secondary opacity-0 duration-200 md:block md:group-hover:-translate-y-1 md:group-hover:opacity-100">
+                  Made with{" "}
+                  <Image
+                    src={Illustrator}
+                    alt="Adobe Illustrator logo"
+                    className="mr-0 inline h-5 w-5"
+                  />
+                </div>
+              </figure>
             </div>
           </div>
           <div>
@@ -281,10 +302,20 @@ export default function Home() {
               Get In Touch
             </h1>
             <div className="mx-auto flex w-7/12 flex-col-reverse items-center justify-center gap-y-12 gap-x-20 text-secondary md:flex-row">
-              <Image
-                src={Letter}
-                alt="A picture of a laptop near a cup of coffee"
-              />
+              <figure className="group relative">
+                <Image
+                  src={Letter}
+                  alt="A picture of a laptop near a cup of coffee"
+                />
+                <div className="absolute -top-7 right-0 left-0 z-0 mx-auto hidden h-20 text-center text-secondary opacity-0 duration-200 md:block md:group-hover:-translate-y-1 md:group-hover:opacity-100">
+                  Made with{" "}
+                  <Image
+                    src={Illustrator}
+                    alt="Adobe Illustrator logo"
+                    className="mr-0 inline h-5 w-5"
+                  />
+                </div>
+              </figure>
               <article className="w-full space-y-6 text-center text-base md:w-1/2 md:text-left md:text-lg">
                 <p>
                   I&apos;m always looking for new opportunities and my inbox is

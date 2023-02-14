@@ -79,17 +79,17 @@ export default function Home() {
           <CodeBracketSquareIcon className="h-10 w-10" />
           <h1>yuuns.tech</h1>
         </div>
-        <ul className="mx-auto hidden h-full items-center justify-center gap-x-20 font-semibold text-primary-500 sm:flex md:mr-0">
-          <li className="relative after:absolute after:-bottom-2 after:left-0 after:h-1 after:w-1/4 after:origin-left after:scale-x-0 after:rounded-full after:bg-primary-500 after:duration-150 after:content-[''] hover:after:scale-x-100">
+        <ul className="mx-auto hidden h-full items-center justify-center gap-x-20 font-semibold text-primary-300 sm:flex md:mr-0">
+          <li className="relative before:pointer-events-none before:absolute before:left-0 before:top-0 before:w-0 before:overflow-hidden before:whitespace-nowrap before:text-primary-500 before:duration-200 before:content-['About_me'] hover:before:w-full">
             <a href="#about">About me</a>
           </li>
-          <li className="relative after:absolute after:-bottom-2 after:left-0 after:h-1 after:w-1/4 after:origin-left after:scale-x-0 after:rounded-full after:bg-primary-500 after:duration-150 after:content-[''] hover:after:scale-x-100">
+          <li className="relative before:pointer-events-none before:absolute before:left-0 before:top-0 before:w-0 before:overflow-hidden before:whitespace-nowrap before:text-primary-500 before:duration-200 before:content-['Projects'] hover:before:w-full">
             <a href="#projects">Projects</a>
           </li>
-          <li className="relative after:absolute after:-bottom-2 after:left-0 after:h-1 after:w-1/4 after:origin-left after:scale-x-0 after:rounded-full after:bg-primary-500 after:duration-150 after:content-[''] hover:after:scale-x-100">
+          <li className="relative before:pointer-events-none before:absolute before:left-0 before:top-0 before:w-0 before:overflow-hidden before:whitespace-nowrap before:text-primary-500 before:duration-200 before:content-['Contact'] hover:before:w-full">
             <a href="#contact">Contact</a>
           </li>
-          <li className="relative after:absolute after:-bottom-2 after:left-0 after:h-1 after:w-1/4 after:origin-left after:scale-x-0 after:rounded-full after:bg-primary-500 after:duration-150 after:content-[''] hover:after:scale-x-100">
+          <li className="relative before:pointer-events-none before:absolute before:left-0 before:top-0 before:w-0 before:overflow-hidden before:whitespace-nowrap before:text-primary-500 before:duration-200 before:content-['Resume'] hover:before:w-full">
             <a rel="noopener noreferrer" target="_blank" href="/Resume.pdf">
               Resume
             </a>
@@ -97,7 +97,7 @@ export default function Home() {
         </ul>
       </header>
       <main className={`${inter.variable} font-sans`}>
-        <div className="group my-12 mx-auto flex w-4/5 flex-col items-center justify-center gap-x-20 sm:my-20 md:my-32 lg:flex-row">
+        <div className="my-12 mx-auto flex w-4/5 flex-col items-center justify-center gap-x-20 sm:my-20 md:my-32 lg:flex-row">
           <figure className="mb-10 w-2/3 space-y-6 sm:w-80 lg:mb-0 xl:w-96">
             <Image
               src={HeroImage}
@@ -113,15 +113,12 @@ export default function Home() {
           <article className="text-center text-4xl sm:text-6xl lg:text-left lg:text-7xl">
             <span className="font-bold text-ternary-400">Hi, I&apos;m</span>
             <br />
-            <span className="relative font-black text-primary-400 after:absolute after:-bottom-1 after:left-0 after:h-3 after:w-full after:origin-top after:scale-y-0 after:bg-primary-400 after:duration-150 after:content-[''] sm:group-hover:after:scale-y-100">
+            <span className="relative font-black text-primary-400">
               Yunus Emre
             </span>
             <br />
             <span className="text-lg font-semibold text-ternary-400 sm:text-2xl lg:text-3xl">
-              <span>Junior </span>
-              <span className="relative after:absolute after:left-0 after:-bottom-7 after:origin-top after:scale-y-0 after:duration-150 after:content-['Designer'] sm:group-hover:content-[''] sm:group-hover:after:scale-y-100">
-                Full Stack Engineer
-              </span>
+              Full Stack Engineer & Designer
             </span>
           </article>
         </div>
@@ -152,7 +149,7 @@ export default function Home() {
                 </p>
                 <ul className="mx-auto grid w-full grid-cols-2 md:mx-0 md:w-3/4">
                   <li className="before:mr-2 before:content-['▸']">
-                    JavaScript
+                    JavaScript (ES6+)
                   </li>
                   <li className="before:mr-2 before:content-['▸']">
                     TypeScript

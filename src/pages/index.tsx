@@ -9,6 +9,7 @@ import {
   ArrowRightCircleIcon,
 } from "@heroicons/react/24/solid";
 import { FaceSmileIcon } from "@heroicons/react/24/outline";
+
 import HeroImage from "../../public/Me.svg";
 import TransitionWave from "../../public/TransitionWave.svg";
 import Laptop from "../../public/Laptop.svg";
@@ -212,7 +213,7 @@ export default function Home() {
               id="projects"
               className="mx-auto mb-10 text-center text-4xl font-bold text-secondary md:mb-20 md:text-6xl"
             >
-              Some Things I’ve Built
+              Some Things I&apos;ve Built
             </h1>
             <div className="z-10 mx-auto flex w-10/12 flex-col space-y-5 lg:w-7/12">
               <div className="group relative">
@@ -239,9 +240,9 @@ export default function Home() {
                     <p className="mt-3 before:mr-2 before:content-['▸']">
                       Developed the open-source website using <b>React</b>.
                     </p>
-                    <a className="mt-3 block underline md:hidden">
+                    <p className="mt-3 block underline md:hidden">
                       Click here to visit.
-                    </a>
+                    </p>
                   </article>
                   <Image
                     src={Sinbad}
@@ -269,9 +270,9 @@ export default function Home() {
                     <p className="mt-3 before:mr-2 before:content-['▸']">
                       Developed the open-source website using <b>React</b>.
                     </p>
-                    <a className="mt-3 block underline md:hidden">
+                    <p className="mt-3 block underline md:hidden">
                       Click here to visit.
-                    </a>
+                    </p>
                   </article>
                   <Image
                     src={Conversions}
@@ -300,9 +301,9 @@ export default function Home() {
                     <p className="mt-3 before:mr-2 before:content-['▸']">
                       Developed the open-source bot using <b>Node.js</b>.
                     </p>
-                    <a className="mt-3 block underline md:hidden">
+                    <p className="mt-3 block underline md:hidden">
                       Click here to visit.
-                    </a>
+                    </p>
                   </article>
                   <Image
                     src={HeMan}

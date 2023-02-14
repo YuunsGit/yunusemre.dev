@@ -70,7 +70,7 @@ export default function Home() {
           property="og:description"
           content="Yunus Emre's portfolio website"
         />
-        <meta name="theme-color" content="#786969"></meta>
+        <meta name="theme-color" content="#7B9C8A"></meta>
       </Head>
       <header
         className={`${inter.variable} mx-auto my-4 flex h-16 w-4/5 select-none flex-col items-center justify-center font-sans sm:h-32 md:my-0 md:h-24 md:flex-row md:justify-between`}

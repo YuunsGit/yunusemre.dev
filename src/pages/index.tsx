@@ -90,7 +90,7 @@ export default function Home() {
             <a href="#contact">Contact</a>
           </li>
           <li className="relative after:absolute after:-bottom-2 after:left-0 after:h-1 after:w-1/4 after:origin-left after:scale-x-0 after:rounded-full after:bg-primary-500 after:duration-150 after:content-[''] hover:after:scale-x-100">
-            <a rel="noreferrer" target="_blank" href="/resume.pdf">
+            <a rel="noopener noreferrer" target="_blank" href="/Resume.pdf">
               Resume
             </a>
           </li>
@@ -110,21 +110,19 @@ export default function Home() {
               ))}
             </div>
           </figure>
-          <article className="text-center lg:text-left">
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl">
-              <span className="font-bold text-ternary-400">Hi, I&apos;m</span>
-              <br />
-              <span className="relative font-black text-primary-400 after:absolute after:-bottom-1 after:left-0 after:h-3 after:w-full after:origin-top after:scale-y-0 after:bg-primary-400 after:duration-150 after:content-[''] sm:group-hover:after:scale-y-100">
-                Yunus Emre
+          <article className="text-center text-4xl sm:text-6xl lg:text-left lg:text-7xl">
+            <span className="font-bold text-ternary-400">Hi, I&apos;m</span>
+            <br />
+            <span className="relative font-black text-primary-400 after:absolute after:-bottom-1 after:left-0 after:h-3 after:w-full after:origin-top after:scale-y-0 after:bg-primary-400 after:duration-150 after:content-[''] sm:group-hover:after:scale-y-100">
+              Yunus Emre
+            </span>
+            <br />
+            <span className="text-lg font-semibold text-ternary-400 sm:text-2xl lg:text-3xl">
+              <span>Junior </span>
+              <span className="relative after:absolute after:left-0 after:-bottom-7 after:origin-top after:scale-y-0 after:duration-150 after:content-['Designer'] sm:group-hover:content-[''] sm:group-hover:after:scale-y-100">
+                Full Stack Engineer
               </span>
-              <br />
-              <span className="text-lg font-semibold text-ternary-400 sm:text-2xl lg:text-3xl">
-                <span>Junior </span>
-                <span className="relative after:absolute after:left-0 after:-bottom-7 after:origin-top after:scale-y-0 after:duration-150 after:content-['Designer'] sm:group-hover:content-[''] sm:group-hover:after:scale-y-100">
-                  Full Stack Engineer
-                </span>
-              </span>
-            </h1>
+            </span>
           </article>
         </div>
         <Image

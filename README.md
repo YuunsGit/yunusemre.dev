@@ -11,5 +11,4 @@
   <img alt="Logo" src="https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png" width="100" />
   <img alt="Logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" width="100" />
   <img alt="Logo" src="https://i.imgur.com/ZtGiOAr.png" width="100" />
-
 </div>

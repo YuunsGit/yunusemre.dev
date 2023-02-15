@@ -240,18 +240,18 @@ export default function Home() {
               Some Things I&apos;ve Built
             </h1>
             <div className="z-10 mx-auto flex w-10/12 flex-col space-y-5 lg:w-7/12">
-              <div className="group relative">
+              <a
+                href="https://www.sinbaddigibox.com"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative"
+              >
                 <Image
                   src={Sinbadude}
                   alt="Mascot of Sinbad DigiBox"
                   className="absolute -left-44 -top-32 hidden h-4/5 -rotate-12 lg:block"
                 />
-                <a
-                  href="https://www.sinbaddigibox.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-sky-50 p-12 text-center duration-200 hover:bg-sky-100 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left"
-                >
+                <div className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-sky-50 p-12 text-center duration-200 hover:bg-sky-100 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left">
                   <article>
                     <h1 className="text-2xl font-extrabold">Sinbad DigiBox</h1>
                     <h2 className="text-xl font-semibold">Lead & Web Mentor</h2>
@@ -273,16 +273,16 @@ export default function Home() {
                     alt="Sinbad DigiBox logo"
                     className="h-auto w-full md:w-1/3"
                   />
-                </a>
+                </div>
                 <ArrowRightCircleIcon className="absolute right-0 top-0 bottom-0 z-0 my-auto hidden h-14 text-sky-100 duration-200 group-hover:translate-x-16 md:block" />
-              </div>
-              <div className="group relative">
-                <a
-                  href="https://conversions.yuuns.tech/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-stone-800 p-12 text-center text-secondary duration-200 hover:bg-stone-900 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left"
-                >
+              </a>
+              <a
+                href="https://conversions.yuuns.tech/"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative"
+              >
+                <div className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-stone-800 p-12 text-center text-secondary duration-200 hover:bg-stone-900 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left">
                   <article>
                     <h1 className="text-2xl font-extrabold">Conversions</h1>
                     <h2 className="text-xl font-semibold">Author</h2>
@@ -303,16 +303,16 @@ export default function Home() {
                     alt="Conversions logo"
                     className="h-auto w-full md:w-1/3"
                   />
-                </a>
+                </div>
                 <ArrowRightCircleIcon className="absolute right-0 top-0 bottom-0 z-0 my-auto hidden h-14 text-stone-900 duration-200 group-hover:translate-x-16 md:block" />
-              </div>
-              <div className="group relative">
-                <a
-                  href="https://github.com/YuunsGit/legionary"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="relative z-10 flex flex-col-reverse justify-between gap-x-0 gap-y-8 rounded-3xl bg-stone-100 p-12 text-center text-ternary-500 duration-200 hover:bg-stone-200 md:flex-row  md:gap-x-20 md:gap-y-0 md:text-left"
-                >
+              </a>
+              <a
+                href="https://github.com/YuunsGit/legionary"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative"
+              >
+                <div className="relative z-10 flex flex-col-reverse justify-between gap-x-0 gap-y-8 rounded-3xl bg-stone-100 p-12 text-center text-ternary-500 duration-200 hover:bg-stone-200 md:flex-row  md:gap-x-20 md:gap-y-0 md:text-left">
                   <article>
                     <h1 className="text-2xl font-extrabold">Legionary</h1>
                     <h2 className="text-xl font-semibold">Author</h2>
@@ -334,9 +334,9 @@ export default function Home() {
                     alt="Legionary logo"
                     className="my-auto w-full rounded-2xl md:w-1/3"
                   />
-                </a>
+                </div>
                 <ArrowRightCircleIcon className="absolute right-0 top-0 bottom-0 z-0 my-auto hidden h-14 text-stone-200 duration-200 group-hover:translate-x-16 md:block" />
-              </div>
+              </a>
             </div>
           </div>
           <div>

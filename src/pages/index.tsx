@@ -231,7 +231,7 @@ export default function Home() {
                   alt="Mascot of Sinbad DigiBox"
                   className="absolute -left-44 -top-32 hidden h-4/5 -rotate-12 lg:block"
                 />
-                <div className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-sky-50 p-12 text-center duration-200 hover:bg-sky-100 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left">
+                <div className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-sky-50 p-12 text-center duration-200 group-hover:bg-sky-100 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left">
                   <article>
                     <h1 className="text-2xl font-extrabold">Sinbad DigiBox</h1>
                     <h2 className="text-xl font-semibold">Lead & Web Mentor</h2>
@@ -262,7 +262,7 @@ export default function Home() {
                 rel="noreferrer"
                 className="group relative"
               >
-                <div className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-stone-800 p-12 text-center text-secondary duration-200 hover:bg-stone-900 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left">
+                <div className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-stone-800 p-12 text-center text-secondary duration-200 group-hover:bg-stone-900 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left">
                   <article>
                     <h1 className="text-2xl font-extrabold">Conversions</h1>
                     <h2 className="text-xl font-semibold">Author</h2>
@@ -292,7 +292,7 @@ export default function Home() {
                 rel="noreferrer"
                 className="group relative"
               >
-                <div className="relative z-10 flex flex-col-reverse justify-between gap-x-0 gap-y-8 rounded-3xl bg-stone-100 p-12 text-center text-ternary-500 duration-200 hover:bg-stone-200 md:flex-row  md:gap-x-20 md:gap-y-0 md:text-left">
+                <div className="relative z-10 flex flex-col-reverse justify-between gap-x-0 gap-y-8 rounded-3xl bg-stone-100 p-12 text-center text-ternary-500 duration-200 group-hover:bg-stone-200 md:flex-row  md:gap-x-20 md:gap-y-0 md:text-left">
                   <article>
                     <h1 className="text-2xl font-extrabold">Legionary</h1>
                     <h2 className="text-xl font-semibold">Author</h2>

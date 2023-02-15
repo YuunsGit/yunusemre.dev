@@ -131,6 +131,7 @@ export default function Home() {
                 src={HeroImage}
                 alt="Picture of the author"
                 className="z-10 select-none"
+                priority
               />
               <div className="absolute -top-7 right-0 left-0 z-0 mx-auto hidden h-20 text-center text-primary-400 opacity-0 duration-200 md:block md:group-hover:-translate-y-1 md:group-hover:opacity-100 ">
                 Made with{" "}

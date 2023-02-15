@@ -126,22 +126,12 @@ export default function Home() {
       <main className={`${overpass.variable} font-sans`}>
         <div className="my-12 mx-auto flex w-4/5 flex-col items-center justify-center gap-x-20 sm:my-20 md:my-32 lg:flex-row">
           <div className="mb-10 w-2/3 space-y-6 sm:w-80 lg:mb-0 xl:w-96">
-            <figure className="group relative">
-              <Image
-                src={HeroImage}
-                alt="Picture of the author"
-                className="z-10 select-none"
-                priority
-              />
-              <div className="absolute -top-7 right-0 left-0 z-0 mx-auto hidden h-20 text-center text-primary-400 opacity-0 duration-200 md:block md:group-hover:-translate-y-1 md:group-hover:opacity-100 ">
-                Made with{" "}
-                <Image
-                  src={Illustrator}
-                  alt="Adobe Illustrator logo"
-                  className="mr-0 inline h-5 w-5"
-                />
-              </div>
-            </figure>
+            <Image
+              src={HeroImage}
+              alt="Picture of the author"
+              className="z-10 select-none"
+              priority
+            />
             <div className="z-10 flex select-none justify-center gap-x-4">
               {socials.map(({ name, icon, link }) => (
                 <Social name={name} icon={icon} link={link} key={name} />
@@ -216,20 +206,10 @@ export default function Home() {
                   <li className="before:mr-2 before:content-['▸']">Astro</li>
                 </ul>
               </article>
-              <figure className="group relative">
-                <Image
-                  src={Laptop}
-                  alt="A picture of a laptop near a cup of coffee"
-                />
-                <div className="absolute -top-7 right-0 left-0 z-0 mx-auto hidden h-20 text-center text-secondary opacity-0 duration-200 md:block md:group-hover:-translate-y-1 md:group-hover:opacity-100">
-                  Made with{" "}
-                  <Image
-                    src={Illustrator}
-                    alt="Adobe Illustrator logo"
-                    className="mr-0 inline h-5 w-5"
-                  />
-                </div>
-              </figure>
+              <Image
+                src={Laptop}
+                alt="A picture of a laptop near a cup of coffee"
+              />
             </div>
           </div>
           <div>
@@ -347,20 +327,10 @@ export default function Home() {
               Get In Touch
             </h1>
             <div className="mx-auto flex w-7/12 flex-col-reverse items-center justify-center gap-y-12 gap-x-20 text-secondary md:flex-row">
-              <figure className="group relative">
-                <Image
-                  src={Letter}
-                  alt="A picture of a laptop near a cup of coffee"
-                />
-                <div className="absolute -top-7 right-0 left-0 z-0 mx-auto hidden h-20 text-center text-secondary opacity-0 duration-200 md:block md:group-hover:-translate-y-1 md:group-hover:opacity-100">
-                  Made with{" "}
-                  <Image
-                    src={Illustrator}
-                    alt="Adobe Illustrator logo"
-                    className="mr-0 inline h-5 w-5"
-                  />
-                </div>
-              </figure>
+              <Image
+                src={Letter}
+                alt="A picture of a laptop near a cup of coffee"
+              />
               <article className="w-full space-y-6 text-center text-base md:w-1/2 md:text-left md:text-lg">
                 <p>
                   I&apos;m always looking for new opportunities and my inbox is
@@ -388,7 +358,7 @@ export default function Home() {
           target="_blank"
           className="relative text-sm text-secondary duration-100 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-secondary after:duration-150 after:content-[''] hover:after:scale-x-100 sm:text-base"
         >
-          <code>Designed & Built by Yunus Emre Kepenek</code>
+          <code>Illustrated, Designed & Built by Yunus Emre Kepenek</code>
         </a>
       </footer>
     </>

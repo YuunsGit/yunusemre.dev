@@ -18,7 +18,6 @@ import Sinbadude from "../../public/Sinbadude.svg";
 import Conversions from "../../public/Conversions.svg";
 import Letter from "../../public/Letter.svg";
 
-import Illustrator from "../../public/Illustrator.svg";
 import Instagram from "../../public/Instagram.svg";
 import LinkedIn from "../../public/LinkedIn.svg";
 import ArtStation from "../../public/ArtStation.svg";

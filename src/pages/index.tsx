@@ -170,7 +170,7 @@ export default function Home() {
         <Image
           src={TransitionWave}
           alt="Wave image at the top"
-          className="min-w-full select-none"
+          className="min-w-[300%] select-none overflow-hidden md:min-w-[200%] lg:min-w-full"
         />
         <div className="space-y-32 bg-primary-300 py-24 md:space-y-56 md:py-40">
           <div>
@@ -355,9 +355,12 @@ export default function Home() {
           href="https://github.com/YuunsGit/yuuns-tech"
           rel="noreferrer"
           target="_blank"
-          className="relative text-sm text-secondary duration-100 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-secondary after:duration-150 after:content-[''] hover:after:scale-x-100 sm:text-base"
+          className="max-w-9/12 relative inline-block text-sm text-secondary duration-100 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-secondary after:duration-150 after:content-[''] sm:text-base sm:hover:after:scale-x-100"
         >
-          <code>Illustrated, Designed & Built by Yunus Emre Kepenek</code>
+          <code>
+            Illustrated, Designed & Built by{" "}
+            <span className="whitespace-nowrap">Yunus Emre Kepenek</span>
+          </code>
         </a>
       </footer>
     </>

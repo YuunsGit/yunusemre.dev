@@ -170,7 +170,7 @@ export default function Home() {
         <Image
           src={TransitionWave}
           alt="Wave image at the top"
-          className="min-w-[300%] select-none overflow-hidden md:min-w-[200%] lg:min-w-full"
+          className="min-w-[300%] select-none md:min-w-[200%] lg:min-w-full"
         />
         <div className="space-y-32 bg-primary-300 py-24 text-white md:space-y-56 md:py-40">
           <div>
@@ -337,7 +337,7 @@ export default function Home() {
                   hi, I&apos;ll try my best to get back to you!
                 </p>
                 <a
-                  href="mailto:yekepenek2002@hotmail.com"
+                  href="mailto:yunus.emre.kepenek@outlook.com"
                   className="inline-block space-x-2 rounded-lg bg-primary-400 px-6 py-4 duration-200 hover:bg-primary-500"
                 >
                   <FaceSmileIcon className="inline w-7" />

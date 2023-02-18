@@ -180,7 +180,7 @@ export default function Home() {
             >
               About Me
             </h1>
-            <div className="mx-auto flex w-9/12 flex-col-reverse items-center justify-center gap-y-12 text-center md:w-7/12 md:text-left lg:flex-row lg:gap-y-0 lg:space-x-10">
+            <div className="mx-auto flex w-9/12 max-w-7xl flex-col-reverse items-center justify-center gap-y-12 text-center md:w-7/12 md:text-left lg:flex-row lg:gap-y-0 lg:space-x-10">
               <article className="space-y-3 sm:text-lg lg:w-1/2">
                 <p>
                   I am a software engineering student with a specialization in
@@ -218,7 +218,7 @@ export default function Home() {
             >
               Some Things I&apos;ve Built
             </h1>
-            <div className="z-10 mx-auto flex w-10/12 flex-col space-y-5 lg:w-7/12">
+            <div className="z-10 mx-auto flex w-10/12 max-w-7xl flex-col space-y-5 lg:w-7/12">
               <a
                 href="https://www.sinbaddigibox.com"
                 target="_blank"
@@ -325,7 +325,7 @@ export default function Home() {
             >
               Get In Touch
             </h1>
-            <div className="mx-auto flex w-7/12 flex-col-reverse items-center justify-center gap-y-12 gap-x-20 md:flex-row">
+            <div className="mx-auto flex w-7/12 max-w-7xl flex-col-reverse items-center justify-center gap-y-12 gap-x-20 md:flex-row">
               <Image
                 src={Letter}
                 alt="A picture of a laptop near a cup of coffee"

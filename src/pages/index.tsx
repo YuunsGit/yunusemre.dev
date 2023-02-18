@@ -172,15 +172,15 @@ export default function Home() {
           alt="Wave image at the top"
           className="min-w-[300%] select-none overflow-hidden md:min-w-[200%] lg:min-w-full"
         />
-        <div className="space-y-32 bg-primary-300 py-24 md:space-y-56 md:py-40">
+        <div className="space-y-32 bg-primary-300 py-24 text-white md:space-y-56 md:py-40">
           <div>
             <h1
               id="about"
-              className="mx-auto mb-10 w-10/12 text-center text-4xl font-bold text-secondary sm:mb-20 sm:text-6xl"
+              className="mx-auto mb-10 w-10/12 text-center text-4xl font-bold sm:mb-20 sm:text-6xl"
             >
               About Me
             </h1>
-            <div className="mx-auto flex w-9/12 flex-col-reverse items-center justify-center gap-y-12 text-center text-secondary md:w-7/12 md:text-left lg:flex-row lg:gap-y-0 lg:space-x-10">
+            <div className="mx-auto flex w-9/12 flex-col-reverse items-center justify-center gap-y-12 text-center md:w-7/12 md:text-left lg:flex-row lg:gap-y-0 lg:space-x-10">
               <article className="space-y-3 sm:text-lg lg:w-1/2">
                 <p>
                   I am a software engineering student with a specialization in
@@ -214,7 +214,7 @@ export default function Home() {
           <div>
             <h1
               id="projects"
-              className="mx-auto mb-10 w-10/12 text-center text-4xl font-bold text-secondary md:mb-20 md:text-6xl"
+              className="mx-auto mb-10 w-10/12 text-center text-4xl font-bold md:mb-20 md:text-6xl"
             >
               Some Things I&apos;ve Built
             </h1>
@@ -230,7 +230,7 @@ export default function Home() {
                   alt="Mascot of Sinbad DigiBox"
                   className="absolute -left-44 -top-32 hidden h-4/5 -rotate-12 lg:block"
                 />
-                <div className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-sky-50 p-12 text-center duration-200 group-hover:bg-sky-100 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left">
+                <div className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-sky-50 p-12 text-center text-ternary-500 duration-200 group-hover:bg-sky-100 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left">
                   <article>
                     <h1 className="text-2xl font-extrabold">Sinbad DigiBox</h1>
                     <h2 className="text-xl font-semibold">Lead & Web Mentor</h2>
@@ -261,7 +261,7 @@ export default function Home() {
                 rel="noreferrer"
                 className="group relative"
               >
-                <div className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-stone-800 p-12 text-center text-secondary duration-200 group-hover:bg-stone-900 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left">
+                <div className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-stone-800 p-12 text-center duration-200 group-hover:bg-stone-900 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left">
                   <article>
                     <h1 className="text-2xl font-extrabold">Conversions</h1>
                     <h2 className="text-xl font-semibold">Author</h2>
@@ -321,11 +321,11 @@ export default function Home() {
           <div>
             <h1
               id="contact"
-              className="mx-auto mb-10 w-10/12 text-center text-4xl font-bold text-secondary md:mb-20 md:text-6xl"
+              className="mx-auto mb-10 w-10/12 text-center text-4xl font-bold md:mb-20 md:text-6xl"
             >
               Get In Touch
             </h1>
-            <div className="mx-auto flex w-7/12 flex-col-reverse items-center justify-center gap-y-12 gap-x-20 text-secondary md:flex-row">
+            <div className="mx-auto flex w-7/12 flex-col-reverse items-center justify-center gap-y-12 gap-x-20 md:flex-row">
               <Image
                 src={Letter}
                 alt="A picture of a laptop near a cup of coffee"
@@ -356,7 +356,7 @@ export default function Home() {
             href="https://github.com/YuunsGit/yuuns-tech"
             rel="noreferrer"
             target="_blank"
-            className="relative text-sm text-secondary duration-100 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-secondary after:duration-150 after:content-[''] sm:text-base sm:hover:after:scale-x-100"
+            className="relative text-sm text-white duration-100 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-secondary after:duration-150 after:content-[''] sm:text-base sm:hover:after:scale-x-100"
           >
             <code>
               Illustrated, Designed & Built by{" "}

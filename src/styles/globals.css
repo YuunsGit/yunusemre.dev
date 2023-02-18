@@ -19,4 +19,21 @@ body {
   overflow-x: hidden;
   background-color: #f9f9ff;
   scroll-behavior: smooth;
+  overflow: overlay;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #495c51;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #678273;
 }

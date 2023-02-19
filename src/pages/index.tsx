@@ -61,7 +61,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Yunus Emre Kepenek</title>
+        <title>Yunus Emre Kepenek - Portfolio</title>
         <meta
           name="description"
           content="Yunus Emre is a software engineering student who specializes in full stack development and designing."
@@ -103,7 +103,7 @@ export default function Home() {
         <nav className="mx-auto my-4 flex h-16 w-4/5 select-none flex-col items-center justify-center sm:h-32 lg:my-0 lg:h-24 lg:flex-row lg:justify-between">
           <div className="mx-auto flex h-full items-center justify-start gap-x-2 text-3xl font-extrabold text-primary-400 lg:ml-0">
             <CodeBracketSquareIcon className="h-10 w-10" />
-            <h1>yuuns.tech</h1>
+            <span data-nosnippet>yuuns.tech</span>
           </div>
           <ul className="mx-auto hidden h-full items-center justify-center gap-x-20 font-semibold text-primary-300 sm:flex lg:mr-0">
             <li className="relative before:pointer-events-none before:absolute before:left-0 before:top-0 before:w-0 before:overflow-hidden before:whitespace-nowrap before:text-primary-500 before:duration-200 before:content-['About_me'] hover:before:w-full">
@@ -141,17 +141,17 @@ export default function Home() {
           <article className="text-center lg:text-left">
             <h1>
               <span className="text-4xl font-bold text-ternary-400 sm:text-6xl lg:text-7xl">
-                Hi, I&apos;m
+                Hi, I&apos;m{" "}
               </span>
               <br />
               <span className="relative text-4xl font-black text-primary-400 sm:text-6xl lg:text-7xl">
-                Yunus Emre
+                Yunus Emre.
               </span>
             </h1>
             <br />
             <h2>
               <span className="text-lg font-semibold text-ternary-400 sm:text-2xl lg:text-3xl">
-                Full Stack Engineer
+                Full Stack Engineer{" "}
               </span>
               <br />
               <span className="text-lg font-semibold text-ternary-400 sm:text-2xl lg:text-3xl">
@@ -175,36 +175,42 @@ export default function Home() {
         />
         <div className="space-y-32 bg-primary-300 py-24 text-white md:space-y-56 md:py-40">
           <div>
-            <h1
+            <h3
               id="about"
               className="mx-auto mb-10 w-10/12 text-center text-4xl font-bold sm:mb-20 sm:text-6xl"
             >
               About Me
-            </h1>
-            <div className="mx-auto flex w-9/12 max-w-7xl flex-col-reverse items-center justify-center gap-y-12 text-center md:w-7/12 md:text-left lg:flex-row lg:gap-y-0 lg:space-x-10">
-              <article className="space-y-3 sm:text-lg lg:w-1/2">
+            </h3>
+            <div className="mx-auto flex w-9/12 max-w-7xl flex-col-reverse items-center justify-center gap-y-12 md:w-7/12 lg:flex-row lg:gap-y-0 lg:space-x-10">
+              <article className="space-y-6 sm:text-lg lg:w-1/2">
                 <p>
                   I am a software engineering student who specializes in web
                   development. I am passionate about creating intuitive and
                   visually appealing websites that are both functional and
                   user-friendly.
                 </p>
-                <p>
-                  Here are a few technologies I&apos;ve been working with
-                  recently:
-                </p>
-                <ul className="mx-auto grid w-full grid-cols-2 md:mx-0 md:w-3/4">
-                  <li className="before:mr-2 before:content-['▸']">
-                    JavaScript
-                  </li>
-                  <li className="before:mr-2 before:content-['▸']">
-                    TypeScript
-                  </li>
-                  <li className="before:mr-2 before:content-['▸']">Tailwind</li>
-                  <li className="before:mr-2 before:content-['▸']">React</li>
-                  <li className="before:mr-2 before:content-['▸']">Node.js</li>
-                  <li className="before:mr-2 before:content-['▸']">Astro</li>
-                </ul>
+                <div className="space-y-2">
+                  <p>
+                    Here are a few technologies I&apos;ve been working with
+                    recently:
+                  </p>
+                  <ul className="mx-auto grid w-full grid-cols-2 md:mx-0 md:w-3/4">
+                    <li className="before:mr-2 before:content-['•']">
+                      JavaScript
+                    </li>
+                    <li className="before:mr-2 before:content-['•']">
+                      TypeScript
+                    </li>
+                    <li className="before:mr-2 before:content-['•']">
+                      Tailwind
+                    </li>
+                    <li className="before:mr-2 before:content-['•']">React</li>
+                    <li className="before:mr-2 before:content-['•']">
+                      Node.js
+                    </li>
+                    <li className="before:mr-2 before:content-['•']">Astro</li>
+                  </ul>
+                </div>
               </article>
               <Image
                 src={Laptop}
@@ -213,12 +219,12 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <h1
+            <h3
               id="projects"
               className="mx-auto mb-10 w-10/12 text-center text-4xl font-bold md:mb-20 md:text-6xl"
             >
               Some Things I&apos;ve Built
-            </h1>
+            </h3>
             <div className="z-10 mx-auto flex w-10/12 max-w-7xl flex-col space-y-5 lg:w-7/12">
               <a
                 href="https://www.sinbaddigibox.com"
@@ -231,10 +237,10 @@ export default function Home() {
                   alt="Mascot of Sinbad DigiBox"
                   className="absolute -left-44 -top-32 hidden h-4/5 -rotate-12 lg:block"
                 />
-                <div className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-sky-50 p-12 text-center text-ternary-500 duration-200 group-hover:bg-sky-100 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left">
+                <div className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-sky-50 px-7 py-9 text-center text-ternary-500 duration-200 group-hover:bg-sky-100 sm:p-12 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left">
                   <article>
-                    <h1 className="text-2xl font-extrabold">Sinbad DigiBox</h1>
-                    <h2 className="text-xl font-semibold">Lead & Web Mentor</h2>
+                    <h4 className="text-2xl font-extrabold">Sinbad DigiBox</h4>
+                    <h5 className="text-xl font-semibold">Lead & Web Mentor</h5>
                     <br />
                     <p>
                       Voluntary establishment by Ankara Science University
@@ -251,7 +257,7 @@ export default function Home() {
                   <Image
                     src={Sinbad}
                     alt="Sinbad DigiBox logo"
-                    className="h-auto w-full md:w-1/3"
+                    className="mx-auto h-auto w-10/12 md:w-1/3"
                   />
                 </div>
                 <ArrowRightCircleIcon className="absolute right-0 top-0 bottom-0 z-0 my-auto hidden h-14 text-sky-100 duration-200 group-hover:translate-x-16 md:block" />
@@ -262,10 +268,10 @@ export default function Home() {
                 rel="noreferrer"
                 className="group relative"
               >
-                <div className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-stone-800 p-12 text-center duration-200 group-hover:bg-stone-900 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left">
+                <div className="relative z-10 flex flex-col-reverse justify-between gap-y-8 gap-x-0 rounded-3xl bg-stone-800 px-7 py-9 text-center duration-200 group-hover:bg-stone-900 sm:p-12 md:flex-row md:gap-x-20 md:gap-y-0 md:text-left">
                   <article>
-                    <h1 className="text-2xl font-extrabold">Conversions</h1>
-                    <h2 className="text-xl font-semibold">Author</h2>
+                    <h4 className="text-2xl font-extrabold">Conversions</h4>
+                    <h5 className="text-xl font-semibold">Author</h5>
                     <br />
                     <p>
                       Multipurpose PDF editing web app that can split, rotate,
@@ -281,7 +287,7 @@ export default function Home() {
                   <Image
                     src={Conversions}
                     alt="Conversions logo"
-                    className="h-auto w-full md:w-1/3"
+                    className="mx-auto h-auto w-10/12 md:w-1/3"
                   />
                 </div>
                 <ArrowRightCircleIcon className="absolute right-0 top-0 bottom-0 z-0 my-auto hidden h-14 text-stone-900 duration-200 group-hover:translate-x-16 md:block" />
@@ -292,10 +298,10 @@ export default function Home() {
                 rel="noreferrer"
                 className="group relative"
               >
-                <div className="relative z-10 flex flex-col-reverse justify-between gap-x-0 gap-y-8 rounded-3xl bg-stone-100 p-12 text-center text-ternary-500 duration-200 group-hover:bg-stone-200 md:flex-row  md:gap-x-20 md:gap-y-0 md:text-left">
+                <div className="relative z-10 flex flex-col-reverse justify-between gap-x-0 gap-y-8 rounded-3xl bg-stone-100 px-7 py-9 text-center text-ternary-500 duration-200 group-hover:bg-stone-200 sm:p-12 md:flex-row  md:gap-x-20 md:gap-y-0 md:text-left">
                   <article>
-                    <h1 className="text-2xl font-extrabold">Legionary</h1>
-                    <h2 className="text-xl font-semibold">Author</h2>
+                    <h4 className="text-2xl font-extrabold">Legionary</h4>
+                    <h5 className="text-xl font-semibold">Author</h5>
                     <br />
                     <p>
                       Discord bot that is capable of various operations such as
@@ -312,7 +318,7 @@ export default function Home() {
                   <Image
                     src={HeMan}
                     alt="Legionary logo"
-                    className="my-auto w-full rounded-2xl md:w-1/3"
+                    className="my-auto mx-auto w-10/12 md:w-1/3"
                   />
                 </div>
                 <ArrowRightCircleIcon className="absolute right-0 top-0 bottom-0 z-0 my-auto hidden h-14 text-stone-200 duration-200 group-hover:translate-x-16 md:block" />
@@ -320,12 +326,12 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <h1
+            <h3
               id="contact"
               className="mx-auto mb-10 w-10/12 text-center text-4xl font-bold md:mb-20 md:text-6xl"
             >
               Get In Touch
-            </h1>
+            </h3>
             <div className="mx-auto flex w-7/12 max-w-7xl flex-col-reverse items-center justify-center gap-y-12 gap-x-20 md:flex-row">
               <Image
                 src={Letter}

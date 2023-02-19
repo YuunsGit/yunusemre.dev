@@ -64,10 +64,11 @@ export default function Home() {
         <title>Yunus Emre Kepenek</title>
         <meta
           name="description"
-          content="Yunus Emre Kepenek portfolio website"
+          content="Yunus Emre is a software engineering student who specializes in full stack development and designing."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <meta property="og:title" content="Yuuns Tech" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.yuuns.tech/" />
@@ -98,29 +99,29 @@ export default function Home() {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
       </Head>
-      <header
-        className={`${overpass.variable} mx-auto my-4 flex h-16 w-4/5 select-none flex-col items-center justify-center font-sans sm:h-32 lg:my-0 lg:h-24 lg:flex-row lg:justify-between`}
-      >
-        <div className="mx-auto flex h-full items-center justify-start gap-x-2 text-3xl font-extrabold text-primary-400 lg:ml-0">
-          <CodeBracketSquareIcon className="h-10 w-10" />
-          <h1>yuuns.tech</h1>
-        </div>
-        <ul className="mx-auto hidden h-full items-center justify-center gap-x-20 font-semibold text-primary-300 sm:flex lg:mr-0">
-          <li className="relative before:pointer-events-none before:absolute before:left-0 before:top-0 before:w-0 before:overflow-hidden before:whitespace-nowrap before:text-primary-500 before:duration-200 before:content-['About_me'] hover:before:w-full">
-            <a href="#about">About me</a>
-          </li>
-          <li className="relative before:pointer-events-none before:absolute before:left-0 before:top-0 before:w-0 before:overflow-hidden before:whitespace-nowrap before:text-primary-500 before:duration-200 before:content-['Projects'] hover:before:w-full">
-            <a href="#projects">Projects</a>
-          </li>
-          <li className="relative before:pointer-events-none before:absolute before:left-0 before:top-0 before:w-0 before:overflow-hidden before:whitespace-nowrap before:text-primary-500 before:duration-200 before:content-['Contact'] hover:before:w-full">
-            <a href="#contact">Contact</a>
-          </li>
-          <li className="relative before:pointer-events-none before:absolute before:left-0 before:top-0 before:w-0 before:overflow-hidden before:whitespace-nowrap before:text-primary-500 before:duration-200 before:content-['Resume'] hover:before:w-full">
-            <a rel="noopener noreferrer" target="_blank" href="/Resume.pdf">
-              Resume
-            </a>
-          </li>
-        </ul>
+      <header className={`${overpass.variable} font-sans`}>
+        <nav className="mx-auto my-4 flex h-16 w-4/5 select-none flex-col items-center justify-center sm:h-32 lg:my-0 lg:h-24 lg:flex-row lg:justify-between">
+          <div className="mx-auto flex h-full items-center justify-start gap-x-2 text-3xl font-extrabold text-primary-400 lg:ml-0">
+            <CodeBracketSquareIcon className="h-10 w-10" />
+            <h1>yuuns.tech</h1>
+          </div>
+          <ul className="mx-auto hidden h-full items-center justify-center gap-x-20 font-semibold text-primary-300 sm:flex lg:mr-0">
+            <li className="relative before:pointer-events-none before:absolute before:left-0 before:top-0 before:w-0 before:overflow-hidden before:whitespace-nowrap before:text-primary-500 before:duration-200 before:content-['About_me'] hover:before:w-full">
+              <a href="#about">About me</a>
+            </li>
+            <li className="relative before:pointer-events-none before:absolute before:left-0 before:top-0 before:w-0 before:overflow-hidden before:whitespace-nowrap before:text-primary-500 before:duration-200 before:content-['Projects'] hover:before:w-full">
+              <a href="#projects">Projects</a>
+            </li>
+            <li className="relative before:pointer-events-none before:absolute before:left-0 before:top-0 before:w-0 before:overflow-hidden before:whitespace-nowrap before:text-primary-500 before:duration-200 before:content-['Contact'] hover:before:w-full">
+              <a href="#contact">Contact</a>
+            </li>
+            <li className="relative before:pointer-events-none before:absolute before:left-0 before:top-0 before:w-0 before:overflow-hidden before:whitespace-nowrap before:text-primary-500 before:duration-200 before:content-['Resume'] hover:before:w-full">
+              <a rel="noopener noreferrer" target="_blank" href="/Resume.pdf">
+                Resume
+              </a>
+            </li>
+          </ul>
+        </nav>
       </header>
       <main className={`${overpass.variable} font-sans`}>
         <div className="my-12 mx-auto flex w-4/5 flex-col items-center justify-center gap-x-20 sm:my-20 md:my-32 lg:flex-row">
@@ -170,7 +171,7 @@ export default function Home() {
         <Image
           src={TransitionWave}
           alt="Wave image at the top"
-          className="min-w-[300%] select-none md:min-w-[200%] lg:min-w-full"
+          className="2xl:w-100 min-w-[300%] select-none md:min-w-[200%] lg:min-w-full"
         />
         <div className="space-y-32 bg-primary-300 py-24 text-white md:space-y-56 md:py-40">
           <div>
@@ -183,8 +184,8 @@ export default function Home() {
             <div className="mx-auto flex w-9/12 max-w-7xl flex-col-reverse items-center justify-center gap-y-12 text-center md:w-7/12 md:text-left lg:flex-row lg:gap-y-0 lg:space-x-10">
               <article className="space-y-3 sm:text-lg lg:w-1/2">
                 <p>
-                  I am a software engineering student with a specialization in
-                  web development. I am passionate about creating intuitive and
+                  I am a software engineering student who specializes in web
+                  development. I am passionate about creating intuitive and
                   visually appealing websites that are both functional and
                   user-friendly.
                 </p>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { NextFontWithVariable } from "@next/font/dist/types";
 
 import Hero from "./Hero";
 import About from "./About";
@@ -8,9 +7,9 @@ import Contact from "./Contact";
 
 import TransitionWave from "../../public/TransitionWave.svg";
 
-const Main = ({ font }: { font: NextFontWithVariable }) => {
+const Main = ({ font }: { font: string }) => {
   return (
-    <main className={`${font.variable} font-sans`}>
+    <main className={`${font} font-sans`}>
       <Hero />
       <Image
         src={TransitionWave}

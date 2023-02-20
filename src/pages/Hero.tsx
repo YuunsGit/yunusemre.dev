@@ -6,6 +6,7 @@ import Instagram from "../../public/Instagram.svg";
 import LinkedIn from "../../public/LinkedIn.svg";
 import ArtStation from "../../public/ArtStation.svg";
 import GitHub from "../../public/GitHub.svg";
+import { useEffect } from "react";
 
 const socials: { name: string; icon: React.FC; link: string }[] = [
   {

@@ -57,9 +57,9 @@ export default function Home() {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
       </Head>
-      <Header font={overpass} />
-      <Main font={overpass} />
-      <Footer font={grotesk} />
+      <Header font={overpass.variable} />
+      <Main font={overpass.variable} />
+      <Footer font={grotesk.variable} />
     </>
   );
 }

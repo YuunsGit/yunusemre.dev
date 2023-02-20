@@ -1,10 +1,6 @@
-import { NextFontWithVariable } from "@next/font/dist/types";
-
-const Footer = ({ font }: { font: NextFontWithVariable }) => {
+const Footer = ({ font }: { font: string }) => {
   return (
-    <footer
-      className={`${font.variable} bg-primary-300 py-6 text-center font-sans`}
-    >
+    <footer className={`${font} bg-primary-300 py-6 text-center font-sans`}>
       <div className="mx-auto w-9/12">
         <a
           href="https://github.com/YuunsGit/yuuns-tech"

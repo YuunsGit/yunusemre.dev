@@ -31,7 +31,7 @@ const About = () => {
             </ul>
           </div>
         </article>
-        <Image src={Laptop} alt="A picture of a laptop near a cup of coffee" />
+        <Image src={Laptop} alt="Aicture of a laptop near a cup of coffee" />
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ const Contact = () => {
         Get In Touch
       </h3>
       <div className="mx-auto flex w-7/12 max-w-7xl flex-col-reverse items-center justify-center gap-y-12 gap-x-20 md:flex-row">
-        <Image src={Letter} alt="A picture of a laptop near a cup of coffee" />
+        <Image src={Letter} alt="An open envelope with a paper inside it" />
         <article className="w-full space-y-6 text-center text-base md:w-1/2 md:text-left md:text-lg">
           <p>
             I&apos;m always looking for new opportunities and my inbox is always

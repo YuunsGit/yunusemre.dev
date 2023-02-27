@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Laptop from "../../public/Laptop.svg";
+import MetaCertificate from "../../public/Meta.png";
 
 const About = () => {
   return (
@@ -10,7 +10,7 @@ const About = () => {
       >
         About Me
       </h3>
-      <div className="mx-auto flex w-9/12 max-w-7xl flex-col-reverse items-center justify-center gap-y-12 md:w-7/12 lg:flex-row lg:gap-y-0 lg:space-x-10">
+      <div className="z-0 mx-auto flex w-9/12 max-w-7xl flex-col-reverse items-center justify-center gap-y-12 md:w-7/12 lg:flex-row lg:gap-y-0 lg:space-x-10">
         <article className="space-y-6 sm:text-lg lg:w-1/2">
           <p>
             I am a software engineering student who specializes in web
@@ -31,7 +31,17 @@ const About = () => {
             </ul>
           </div>
         </article>
-        <Image src={Laptop} alt="Picture of a laptop near a cup of coffee" />
+        <a
+          href="https://www.credly.com/badges/ecb1c27a-f704-407b-a78e-0b956c17e12f/public_url"
+          className="relative z-10 w-3/4 duration-150 before:absolute before:-z-10 before:h-full before:w-full before:rounded-2xl before:bg-primary-400 before:duration-150 before:content-[''] hover:rotate-3 hover:before:-translate-x-2 hover:before:-rotate-6 sm:w-1/2 xl:w-1/4"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Image
+            src={MetaCertificate}
+            alt="Meta Front-End Developer Professional Certificate granted by Meta"
+          />
+        </a>
       </div>
     </div>
   );

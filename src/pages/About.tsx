@@ -32,7 +32,7 @@ const About = () => {
           </div>
         </article>
         <a
-          href="https://www.credly.com/badges/ecb1c27a-f704-407b-a78e-0b956c17e12f/public_url"
+          href="https://coursera.org/share/67ce6d0465e63876e275cca9778ed0ca"
           className="relative z-10 w-3/4 duration-150 before:absolute before:-z-10 before:h-full before:w-full before:rounded-2xl before:bg-primary-400 before:duration-150 before:content-[''] hover:rotate-3 hover:before:-translate-x-2 hover:before:-rotate-6 sm:w-1/2 xl:w-1/4"
           target="_blank"
           rel="noreferrer"

@@ -14,8 +14,12 @@ const About = () => {
         <article className="space-y-6 sm:text-lg lg:w-1/2">
           <p>
             I am a software engineering student who specializes in web
-            development. I am passionate about creating intuitive and visually
-            appealing websites that are both functional and user-friendly.
+            development. I am passionate about creating intuitive websites that
+            are both functional and user-friendly.
+          </p>
+          <p>
+            As a UI/UX designer and illustrator, I leverage popular design tools
+            to create visually appealing designs that enhance user experience.
           </p>
           <div className="space-y-2">
             <p>
@@ -27,13 +31,13 @@ const About = () => {
               <li className="before:mr-2 before:content-['•']">Tailwind</li>
               <li className="before:mr-2 before:content-['•']">React</li>
               <li className="before:mr-2 before:content-['•']">Node.js</li>
-              <li className="before:mr-2 before:content-['•']">Astro</li>
+              <li className="before:mr-2 before:content-['•']">Next.js</li>
             </ul>
           </div>
         </article>
         <a
           href="https://coursera.org/share/67ce6d0465e63876e275cca9778ed0ca"
-          className="relative z-10 w-3/4 duration-150 before:absolute before:-z-10 before:h-full before:w-full before:rounded-2xl before:bg-primary-400 before:duration-150 before:content-[''] hover:rotate-3 hover:before:-translate-x-2 hover:before:-rotate-6 sm:w-1/2 xl:w-1/4"
+          className="relative z-10 w-3/4 duration-150 before:absolute before:-z-10 before:h-full before:w-full before:rounded-2xl before:bg-primary-400 before:duration-150 before:content-[''] hover:translate-x-1 hover:rotate-3 hover:before:-translate-x-2 hover:before:-rotate-6 sm:w-1/2 xl:w-1/4"
           target="_blank"
           rel="noreferrer"
         >

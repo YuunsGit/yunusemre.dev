@@ -35,7 +35,7 @@ export default function Home() {
           property="og:description"
           content="Yunus Emre's portfolio website"
         />
-        <meta name="theme-color" content="#2B2D31" />
+        <meta name="theme-color" content="#678273" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"

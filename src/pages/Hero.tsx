@@ -1,7 +1,7 @@
 import Social from "./Social";
-import { Me } from "./Me";
+import Lottie from "lottie-react";
+import MeAnimation from "../../public/Me.json";
 
-import HeroImage from "../../public/Me.svg";
 import Instagram from "../../public/Instagram.svg";
 import LinkedIn from "../../public/LinkedIn.svg";
 import ArtStation from "../../public/ArtStation.svg";
@@ -34,7 +34,11 @@ const Hero = () => {
   return (
     <div className="my-12 mx-auto flex w-4/5 flex-col items-center justify-center gap-x-20 sm:my-20 md:my-32 lg:flex-row">
       <div className="mb-10 w-2/3 space-y-6 sm:w-80 lg:mb-0 xl:w-96">
-        <Me />
+        <Lottie
+          className="z-10 select-none overflow-hidden rounded-full"
+          animationData={MeAnimation}
+          loop={true}
+        />
         <div className="z-10 flex select-none justify-center gap-x-3 sm:gap-x-4">
           {socials.map(({ name, icon, link }) => (
             <Social name={name} icon={icon} link={link} key={name} />

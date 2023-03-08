@@ -16,6 +16,7 @@ const Contact = () => {
         <Image
           src={Letter}
           alt="Picture of an open envelope with a paper inside it"
+          className="-rotate-6"
         />
         <article className="w-full space-y-6 text-center text-base md:w-1/2 md:text-left md:text-lg">
           <p>

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Overpass, Space_Grotesk } from "@next/font/google";
+import { Overpass, Space_Grotesk } from "next/font/google";
 
 import Header from "./Header";
 import Main from "./Main";

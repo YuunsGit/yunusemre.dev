@@ -5,7 +5,7 @@
   yuuns.tech - v2
 </h1>
 <p align="center">
-  Very first version of <a href="https://www.yuuns.tech" target="_blank">yuuns.tech</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
+  Bug-free second version of <a href="https://www.yuuns.tech" target="_blank">yuuns.tech</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
 </p>
 <br/>
 <h1 align="center">

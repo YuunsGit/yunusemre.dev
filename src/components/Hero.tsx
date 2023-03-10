@@ -38,21 +38,23 @@ const Hero = () => {
 
   return (
     <div className="my-12 mx-auto flex w-4/5 flex-col items-center justify-center gap-x-20 sm:my-20 md:my-32 lg:flex-row">
-      <div className="mb-10 w-2/3 space-y-6 sm:w-80 lg:mb-0 xl:w-96">
-        {!loaded || (
-          <Image
-            src={MeSvg}
-            alt="Picture of the author"
-            priority
-            className="rounded-full"
+      <div className="relative mb-10 w-2/3 space-y-6 sm:w-80 lg:mb-0 xl:w-96">
+        <div className="aspect-square w-full">
+          {loaded || (
+            <Image
+              src={MeSvg}
+              alt="Picture of the author"
+              priority
+              className="absolute rounded-full"
+            />
+          )}
+          <Lottie
+            className="z-10 select-none overflow-hidden rounded-full"
+            animationData={MeAnimation}
+            onLoadedImages={() => setLoaded(true)}
+            loop={true}
           />
-        )}
-        <Lottie
-          className="z-10 select-none overflow-hidden rounded-full"
-          animationData={MeAnimation}
-          onLoad={() => setLoaded(true)}
-          loop={true}
-        />
+        </div>
         <div className="z-10 flex select-none justify-center gap-x-3 sm:gap-x-4">
           {socials.map(({ name, icon, link }) => (
             <Social name={name} icon={icon} link={link} key={name} />

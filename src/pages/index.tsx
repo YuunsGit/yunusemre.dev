@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { Overpass, Space_Grotesk } from "next/font/google";
 
-import Header from "./Header";
-import Main from "./Main";
-import Footer from "./Footer";
+import Header from "@/components/Header";
+import Main from "@/components/Main";
+import Footer from "@/components/Footer";
 
 const overpass = Overpass({
   subsets: ["latin"],

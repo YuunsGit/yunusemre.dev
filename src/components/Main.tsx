@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import Hero from "./Hero";
-import About from "./About";
-import Projects from "./Projects";
-import Contact from "./Contact";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 import TransitionWave from "../../public/TransitionWave.svg";
 

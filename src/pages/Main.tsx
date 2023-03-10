@@ -12,6 +12,7 @@ const Main = ({ font }: { font: string }) => {
     <main className={`${font} font-sans`}>
       <Hero />
       <Image
+        priority
         src={TransitionWave}
         alt="Wave picture for color transition"
         className="2xl:w-100 min-w-[300%] select-none md:min-w-[200%] lg:min-w-full"

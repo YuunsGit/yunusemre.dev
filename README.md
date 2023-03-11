@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://www.yuuns.tech" target="_blank"><img alt="Logo" src="https://user-images.githubusercontent.com/42357900/218587106-9e98daa6-14bf-4244-9b04-781bdc39786b.svg" width="250" /></a>
+  <a href="https://www.yuuns.tech" target="_blank"><img alt="Logo" src="https://user-images.githubusercontent.com/42357900/224476515-f035b8a0-b821-4667-a14b-5e41f480f36e.gif" width="250" /></a>
 </div>
 <h1 align="center">
   yuuns.tech - v2
@@ -22,3 +22,4 @@
   <img alt="Logo" src="https://user-images.githubusercontent.com/42357900/219872747-281e8987-9cbd-4cd9-b068-f0e8e23ad2bf.png" height="90" />
   <img alt="Logo" src="https://user-images.githubusercontent.com/42357900/218829328-e4d13281-93bf-488d-a36e-29a8c44580e1.svg" height="90" />
 </div>
+

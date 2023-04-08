@@ -20,7 +20,7 @@ const Header = ({ font }: { font: string }) => {
           </li>
           <li>
             <a
-              className="rounded-lg bg-primary-300 px-4 py-2 text-white duration-200 hover:bg-primary-400 hover:duration-200"
+              className="rounded-lg bg-primary-300 px-4 py-3 text-white duration-200 hover:bg-primary-400 hover:duration-200"
               rel="noopener noreferrer"
               target="_blank"
               href="/Resume.pdf"

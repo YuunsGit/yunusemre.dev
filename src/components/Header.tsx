@@ -18,8 +18,13 @@ const Header = ({ font }: { font: string }) => {
           <li className="relative before:pointer-events-none before:absolute before:left-0 before:top-0 before:w-0 before:overflow-hidden before:whitespace-nowrap before:text-primary-500 before:duration-200 before:content-['Contact'] hover:before:w-full">
             <a href="#contact">Contact</a>
           </li>
-          <li className="relative rounded-full bg-primary-300 px-4 py-2 text-white duration-200 hover:bg-primary-400 hover:duration-200">
-            <a rel="noopener noreferrer" target="_blank" href="/Resume.pdf">
+          <li>
+            <a
+              className="rounded-lg bg-primary-300 px-4 py-2 text-white duration-200 hover:bg-primary-400 hover:duration-200"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="/Resume.pdf"
+            >
               Resume
             </a>
           </li>

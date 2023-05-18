@@ -1,3 +1,5 @@
+"use client";
+
 import Social from "./Social";
 import Lottie from "lottie-react";
 import MeAnimation from "../../public/Me.json";
@@ -37,7 +39,7 @@ const Hero = () => {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <div className="my-12 mx-auto flex w-4/5 flex-col items-center justify-center gap-x-20 sm:my-20 md:my-32 lg:flex-row">
+    <div className="mx-auto my-12 flex w-4/5 flex-col items-center justify-center gap-x-20 sm:my-20 md:my-32 lg:flex-row">
       <div className="relative mb-10 w-2/3 space-y-6 sm:w-80 lg:mb-0 xl:w-96">
         <div className="aspect-square w-full">
           {loaded || (

@@ -17,7 +17,7 @@ const Projects = () => {
       </h3>
       <div className="z-10 mx-auto flex w-10/12 max-w-7xl flex-col space-y-5 lg:w-7/12">
         <a
-          href="https://www.sinbaddigibox.com"
+          href="https://sinbad.yuuns.tech"
           target="_blank"
           rel="noreferrer"
           className="group relative"

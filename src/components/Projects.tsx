@@ -33,8 +33,7 @@ const Projects = () => {
               <h5 className="text-xl font-semibold">Lead & Web Mentor</h5>
               <br />
               <p>
-                Voluntary establishment by Ankara Science University students to
-                maintain a community of various software engineering fields.
+              Provides valuable guidance to computer science students. Collaborating closely with the Sinbad Core team, leads and contributes to web development projects, fostering a collaborative and growth-oriented environment.
               </p>
               <p className="mt-3 before:mr-2 before:content-['▸']">
                 Developed the open-source website using <b>React</b>.
@@ -63,8 +62,7 @@ const Projects = () => {
               <h5 className="text-xl font-semibold">Author</h5>
               <br />
               <p>
-                Multipurpose PDF editing web app that can split, rotate, stamp,
-                and convert PDF files.
+              A user-friendly PDF editing website built using React that demonstrates a variety of key React concepts. Using a straightforward interface and a variety of operations, users may simply modify PDF documents.
               </p>
               <p className="mt-3 before:mr-2 before:content-['▸']">
                 Developed the open-source website using <b>React</b>.

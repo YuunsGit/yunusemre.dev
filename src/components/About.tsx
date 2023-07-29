@@ -13,13 +13,7 @@ const About = () => {
       <div className="z-0 mx-auto flex w-9/12 max-w-7xl flex-col-reverse items-center justify-center gap-y-12 md:w-7/12 lg:flex-row lg:gap-y-0 lg:space-x-10">
         <article className="space-y-6 sm:text-lg lg:w-1/2">
           <p>
-            I am a software engineering student who specializes in web
-            development. I am passionate about creating intuitive websites that
-            are both functional and user-friendly.
-          </p>
-          <p>
-            As a UI/UX designer and illustrator, I leverage popular design tools
-            to create visually appealing designs that enhance user experience.
+            I am a results-driven Software Engineer with a focus on Full Stack Web Development. Currently working as a Full Stack Engineer at a leading cloud service provider in Türkiye, I am committed to continuous learning and staying at the forefront of web and design technologies.
           </p>
           <div className="space-y-2">
             <p>

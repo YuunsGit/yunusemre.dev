@@ -10,7 +10,7 @@ const Header = ({ font }: { font: string }) => {
         </div>
         <ul className="mx-auto hidden h-full items-center justify-center gap-x-20 font-semibold text-primary-300 sm:flex lg:mr-0">
           <li className="relative before:pointer-events-none before:absolute before:left-0 before:top-0 before:w-0 before:overflow-hidden before:whitespace-nowrap before:text-primary-500 before:duration-200 before:content-['Blog'] hover:before:w-full">
-            <a rel="noopener noreferrer" target="_blank" href="https://blog.yuuns.tech">Blog</a>
+            <a rel="noopener noreferrer" href="https://blog.yuuns.tech">Blog</a>
           </li>
           <li>
             <a

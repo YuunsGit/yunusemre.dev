@@ -81,14 +81,27 @@ const Hero = () => {
             Designer
           </span>
         </h2>
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="/Resume.pdf"
-          className="mx-auto mt-6 inline-block rounded border border-opacity-50 bg-primary-100 px-4 py-2 text-base sm:hidden"
-        >
-          Resume
-        </a>
+        <ul className="mx-auto sm:hidden flex mt-10 h-full items-center justify-center gap-x-8 font-semibold text-primary-300">
+          <li>
+            <a
+                className="rounded-lg bg-stone-200 px-4 py-2 text-primary-400 duration-200 hover:bg-stone-300 hover:duration-200"
+                rel="noopener noreferrer"
+                href="https://blog.yuuns.tech/"
+            >
+              Blog
+            </a>
+          </li>
+          <li>
+            <a
+                className="rounded-lg bg-stone-200 px-4 py-2 text-primary-400 duration-200 hover:bg-stone-300 hover:duration-200"
+                rel="noopener noreferrer"
+                target="_blank"
+                href="/Resume.pdf"
+            >
+              Resume
+            </a>
+          </li>
+        </ul>
       </article>
     </div>
   );

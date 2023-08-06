@@ -11,11 +11,11 @@ const Projects = () => {
     <div>
       <h3
         id="projects"
-        className="mx-auto mb-10 w-10/12 text-center text-4xl font-bold md:mb-20 md:text-6xl"
+        className="mx-auto mb-10 max-w-5xl text-center text-4xl font-bold md:mb-20 md:text-6xl px-8"
       >
         Some Things I&apos;ve Built
       </h3>
-      <div className="z-10 mx-auto flex w-10/12 max-w-7xl flex-col space-y-5 lg:w-7/12">
+      <div className="z-10 mx-auto flex max-w-5xl flex-col space-y-5 px-8 lg:px-24 xl:px-0">
         <a
           href="https://sinbad.yuuns.tech"
           target="_blank"

@@ -8,11 +8,11 @@ const Contact = () => {
     <div>
       <h3
         id="contact"
-        className="mx-auto mb-10 w-10/12 text-center text-4xl font-bold md:mb-20 md:text-6xl"
+        className="mx-auto mb-10 max-w-5xl text-center text-4xl font-bold md:mb-20 md:text-6xl"
       >
         Get In Touch
       </h3>
-      <div className="mx-auto flex w-7/12 max-w-7xl flex-col-reverse items-center justify-center gap-y-12 gap-x-20 md:flex-row">
+      <div className="mx-auto flex max-w-5xl flex-col-reverse items-center justify-center gap-y-12 gap-x-20 md:flex-row px-8 md:px-0">
         <Image
           src={Letter}
           alt="Picture of an open envelope with a paper inside it"

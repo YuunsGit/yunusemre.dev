@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaceSmileIcon } from "@heroicons/react/24/outline";
+import { FaceSmileIcon } from "@heroicons/react/24/solid";
 
 import Letter from "../../public/Letter.svg";
 
@@ -26,9 +26,9 @@ const Contact = () => {
           </p>
           <a
             href="mailto:yunus.emre.kepenek@outlook.com"
-            className="inline-block space-x-2 rounded-lg bg-primary-400 px-6 py-4 duration-200 hover:bg-primary-500"
+            className="inline-flex items-center space-x-2 rounded-lg bg-primary-500 px-4 py-2 duration-200 bg-opacity-90 hover:bg-opacity-60"
           >
-            <FaceSmileIcon className="inline w-7" />
+            <FaceSmileIcon className="inline w-6 h-6" />
             <span>Say Hello</span>
           </a>
         </article>

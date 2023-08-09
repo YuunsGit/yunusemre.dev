@@ -33,14 +33,14 @@ const About = () => {
                 </article>
                 <a
                     href="https://www.credly.com/badges/ecb1c27a-f704-407b-a78e-0b956c17e12f/public_url"
-                    className="relative z-10 h-56 w-auto duration-150 before:absolute before:-z-10 before:h-full before:w-full before:rounded-2xl before:bg-primary-400 before:duration-150 before:content-[''] hover:translate-x-1 hover:rotate-3 hover:before:-translate-x-2 hover:before:-rotate-6"
+                    className="relative z-10 h-56 w-auto min-w-0 duration-150 before:absolute before:-z-10 before:h-full before:w-full before:rounded-2xl before:bg-primary-400 before:duration-150 before:content-[''] hover:translate-x-1 hover:rotate-3 hover:before:-translate-x-2 hover:before:-rotate-6"
                     target="_blank"
                     rel="noreferrer"
                 >
                     <Image
                         src={MetaCertificate}
                         alt="Meta Front-End Developer Professional Certificate granted by Meta"
-                        className="w-full h-full"
+                        className="w-full h-full min-w-0"
                     />
                 </a>
             </div>

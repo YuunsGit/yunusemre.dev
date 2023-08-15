@@ -1,12 +1,12 @@
 import Social from "./Social";
 import Lottie from "lottie-react";
-import MeAnimation from "../../public/Me.json";
+import MeAnimation from "../../public/assets/me.json";
 
-import MeSvg from "../../public/Me.svg";
-import Instagram from "../../public/Instagram.svg";
-import LinkedIn from "../../public/LinkedIn.svg";
-import ArtStation from "../../public/ArtStation.svg";
-import GitHub from "../../public/GitHub.svg";
+import MeSvg from "../../public/assets/me.svg";
+import Instagram from "../../public/socials/instagram.svg";
+import LinkedIn from "../../public/socials/linkedin.svg";
+import ArtStation from "../../public/socials/artstation.svg";
+import GitHub from "../../public/socials/github.svg";
 import { useState } from "react";
 import Image from "next/image";
 

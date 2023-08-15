@@ -1,5 +1,5 @@
 import Image from "next/image";
-import MetaCertificate from "../../public/Meta.png";
+import MetaCertificate from "../../public/assets/certificate.png";
 
 const About = () => {
   return (

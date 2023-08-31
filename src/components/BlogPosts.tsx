@@ -30,10 +30,10 @@ const BlogPosts = () => {
             className={`${
               i + 1 !== row.length &&
               "border-b-2 border-b-white border-opacity-25"
-            } group flex py-8 px-0 sm:px-12`}
+            } group flex px-0 py-8 sm:px-12`}
             key={post.guid}
           >
-            <aside className="my-auto mr-6 h-full rounded-md border-2 border-white border-opacity-30 bg-white bg-opacity-10 px-4 text-center text-6xl transition-all group-hover:-translate-y-1 sm:mr-8">
+            <aside className="my-auto mr-6 block h-full rounded-md border-2 border-white border-opacity-30 bg-white bg-opacity-10 px-4 text-center text-6xl transition-all group-hover:-rotate-6 sm:mr-8">
               {i + 1}
             </aside>
             <section>

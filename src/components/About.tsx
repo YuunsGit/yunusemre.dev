@@ -10,26 +10,25 @@ const About = () => {
       >
         About Me
       </h3>
-      <div className="z-0 mx-auto flex max-w-7xl flex-col-reverse items-center justify-center gap-y-12 gap-x-10 px-8 md:flex-row lg:px-0">
+      <div className="z-0 mx-auto flex max-w-7xl flex-col-reverse items-center justify-center gap-x-10 gap-y-12 px-8 md:flex-row lg:px-0">
         <article className="space-y-6 sm:text-lg md:w-1/2">
           <p>
-            I am a results-driven Software Engineer with a focus on Full Stack
-            Web Development. Currently working as a Full Stack Engineer at a
-            leading cloud service provider in Türkiye, I am committed to
-            continuous learning and staying at the forefront of web and design
-            technologies.
+            Hi! I&apos;m Yunus Emre, a software developer who specializes in
+            creating websites and applications. I work as a Full Stack Engineer
+            at the leading cloud service provider in Türkiye. I like keeping up
+            with the latest technology and design trends.
           </p>
           <div className="space-y-2">
             <p>
               Here are a few technologies I&apos;ve been working with recently:
             </p>
             <ul className="mx-auto grid w-full grid-cols-2 md:mx-0 md:w-3/4">
-              <li className="before:mr-2 before:content-['•']">JavaScript</li>
               <li className="before:mr-2 before:content-['•']">TypeScript</li>
-              <li className="before:mr-2 before:content-['•']">Tailwind</li>
               <li className="before:mr-2 before:content-['•']">React</li>
+              <li className="before:mr-2 before:content-['•']">Tailwind</li>
               <li className="before:mr-2 before:content-['•']">Node.js</li>
               <li className="before:mr-2 before:content-['•']">Next.js</li>
+              <li className="before:mr-2 before:content-['•']">Astro</li>
             </ul>
           </div>
         </article>

@@ -102,7 +102,7 @@ const Projects = () => {
               </li>
             </ul>
             <a
-              href="https://github.com/YuunsGit/yuuns-tech"
+              href="https://github.com/YuunsGit/yunusemre.dev"
               target="_blank"
               rel="noreferrer noopener"
               className="block space-x-1.5 rounded-md bg-primary-400 py-1 text-center font-semibold uppercase transition-all hover:bg-opacity-80"

@@ -32,8 +32,8 @@ export default function Home() {
                 <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
                 <meta property="og:title" content="Yuuns Tech"/>
                 <meta property="og:type" content="website"/>
-                <meta property="og:url" content="https://www.yuuns.tech/"/>
-                <meta property="og:image" content="https://www.yuuns.tech/Me.png"/>
+                <meta property="og:url" content="https://www.yunusemre.dev/"/>
+                <meta property="og:image" content="https://www.yunusemre.dev/Me.png"/>
                 <meta
                     property="og:description"
                     content="Yunus Emre's portfolio website"

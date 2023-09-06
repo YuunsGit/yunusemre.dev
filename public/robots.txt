@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.yuuns.tech/sitemap.xml
-Host: https://www.yuuns.tech
+Sitemap: https://www.yunusemre.dev/sitemap.xml
+Host: https://www.yunusemre.dev

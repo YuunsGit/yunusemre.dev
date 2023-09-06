@@ -48,7 +48,7 @@ const Projects = () => {
             </ul>
             <div className="space-y-2">
               <a
-                href="https://blog.yuuns.tech/"
+                href="https://blog.yunusemre.dev/"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="block space-x-1.5 rounded-md bg-primary-500 py-1 text-center text-lg font-semibold uppercase transition-all hover:bg-opacity-80"
@@ -148,7 +148,7 @@ const Projects = () => {
             </ul>
             <div className="space-y-2">
               <a
-                href="https://sinbad.yuuns.tech/"
+                href="https://sinbad.yunusemre.dev/"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="block space-x-1.5 rounded-md bg-primary-500 py-1 text-center text-lg font-semibold uppercase transition-all hover:bg-opacity-80"
@@ -203,7 +203,7 @@ const Projects = () => {
             </ul>
             <div className="space-y-2">
               <a
-                href="https://conversions.yuuns.tech/"
+                href="https://conversions.yunusemre.dev/"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="block space-x-1.5 rounded-md bg-primary-500 py-1 text-center text-lg font-semibold uppercase transition-all hover:bg-opacity-80"

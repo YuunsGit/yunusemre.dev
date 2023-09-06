@@ -8,7 +8,7 @@ const BlogPosts = () => {
 
   useEffect(() => {
     parser
-      .parseURL("https://blog.yuuns.tech/rss.xml")
+      .parseURL("https://blog.yunusemre.dev/rss.xml")
       .then((a) => setPosts(a.items.slice(0, 3)));
   }, []);
 

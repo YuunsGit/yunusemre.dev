@@ -1,11 +1,11 @@
 <div align="center">
-  <a href="https://www.yuuns.tech" target="_blank"><img alt="Logo" src="https://user-images.githubusercontent.com/42357900/224476515-f035b8a0-b821-4667-a14b-5e41f480f36e.gif" width="250" /></a>
+  <a href="https://www.yunusemre.dev" target="_blank"><img alt="Logo" src="https://user-images.githubusercontent.com/42357900/224476515-f035b8a0-b821-4667-a14b-5e41f480f36e.gif" width="250" /></a>
 </div>
 <h1 align="center">
-  yuuns.tech - v2
+  yunusemre.dev - v2
 </h1>
 <p align="center">
-  Well optimized second version of <a href="https://www.yuuns.tech" target="_blank">yuuns.tech</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
+  Well optimized second version of <a href="https://www.yunusemre.dev" target="_blank">yunusemre.dev</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
 </p>
 <br/>
 <h1 align="center">

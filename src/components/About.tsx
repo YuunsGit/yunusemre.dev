@@ -13,7 +13,7 @@ const About = () => {
       <div className="z-0 mx-auto flex max-w-7xl flex-col-reverse items-center justify-center gap-x-10 gap-y-12 px-8 md:flex-row lg:px-0">
         <article className="space-y-6 sm:text-lg md:w-1/2">
           <p>
-            Hi! I&apos;m Yunus Emre, a software developer who specializes in
+            Hi! I&apos;m Yunus Emre, a software engineer who specializes in
             creating websites and applications. I work as a Full Stack Engineer
             at the leading cloud service provider in Türkiye. I like keeping up
             with the latest technology and design trends.

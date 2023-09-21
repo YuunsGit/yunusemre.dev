@@ -25,18 +25,18 @@ export default function Home() {
                 <title>Yunus Emre Kepenek - Portfolio</title>
                 <meta
                     name="description"
-                    content="Yunus Emre is a software engineering student who specializes in full stack development and designing."
+                    content="Hi! I'm Yunus Emre, a software engineer who specializes in creating websites and applications. I like keeping up with the latest technology and design trends. Visit my portfolio to learn more about me."
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico" sizes="any"/>
                 <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
-                <meta property="og:title" content="Yuuns Tech"/>
+                <meta property="og:title" content="Yunus Emre Kepenek"/>
                 <meta property="og:type" content="website"/>
                 <meta property="og:url" content="https://www.yunusemre.dev/"/>
-                <meta property="og:image" content="https://www.yunusemre.dev/Me.png"/>
+                <meta property="og:image" content="https://www.yunusemre.dev/assets/me.png"/>
                 <meta
                     property="og:description"
-                    content="Yunus Emre's portfolio website"
+                    content="Hi! I'm Yunus Emre, a software engineer who specializes in creating websites and applications. I like keeping up with the latest technology and design trends. Visit my portfolio to learn more about me."
                 />
                 <meta name="theme-color" content="#678273"/>
                 <link

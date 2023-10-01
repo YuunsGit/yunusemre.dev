@@ -37,3 +37,8 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #678273;
 }
+
+#scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

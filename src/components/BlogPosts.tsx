@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import Parser, { Item } from "rss-parser";
 
@@ -12,7 +14,6 @@ const BlogPosts = () => {
       .then((a) => setPosts(a.items.slice(0, 3)));
   }, []);
 
-  // @ts-ignore
   return (
     <div>
       <h3

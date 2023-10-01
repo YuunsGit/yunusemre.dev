@@ -14,9 +14,12 @@ const About = () => {
         <article className="space-y-6 sm:text-lg md:w-1/2">
           <p>
             Hi! I&apos;m Yunus Emre, a software engineer who specializes in
-            creating websites and applications. I work as a Full Stack Engineer
-            at the leading cloud service provider in Türkiye. I like keeping up
-            with the latest technology and design trends.
+            creating websites and applications. I work as a Front-end Engineer
+            at{" "}
+            <a className="underline" href="https://radity.com/">
+              Radity
+            </a>
+            . I like keeping up with the latest technology and design trends.
           </p>
           <div className="space-y-2">
             <p>

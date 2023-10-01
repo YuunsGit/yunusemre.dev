@@ -10,8 +10,10 @@ interface Props {
 
 const Message: React.FC<Props> = ({ message }) => {
   return (
-    <div className="ml-auto flex items-center justify-start w-8/12 max-w-fit break-words rounded-xl rounded-br-none text-white bg-primary-300 px-4 py-2 text-xl transition-all">
-      <p className="whitespace-pre-line text-sm">{message}</p>
+    <div className="ml-auto flex items-center justify-start w-8/12 max-w-fit break-words rounded-xl rounded-br-none bg-primary-300 px-4 py-2 text-xl transition-all">
+      <p className="whitespace-pre-line text-white text-base md:text-lg">
+        {message}
+      </p>
     </div>
   );
 };

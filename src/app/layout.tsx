@@ -1,10 +1,7 @@
-import "@/styles/globals.css";
+import "@/app/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 import { Metadata } from "next";
-import Header from "@/components/Header";
-import Main from "@/components/Main";
-import Footer from "@/components/Footer";
 import { Signika_Negative, Space_Grotesk } from "next/font/google";
 
 export const metadata: Metadata = {
@@ -31,17 +28,11 @@ export const metadata: Metadata = {
   ],
 };
 
-const signikaNegative = Signika_Negative({
-  subsets: ["latin"],
-  variable: "--font-overpass",
-});
-
-const grotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-grotesk",
-});
-
-export default function RootLayout() {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <head>
@@ -67,11 +58,7 @@ export default function RootLayout() {
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
       </head>
-      <body className="overflow-hidden">
-        <Header font={signikaNegative.variable} />
-        <Main font={signikaNegative.variable} />
-        <Footer font={grotesk.variable} />
-      </body>
+      <body className="overflow-hidden">{children}</body>
       <Analytics />
     </html>
   );

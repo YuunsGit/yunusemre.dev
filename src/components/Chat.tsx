@@ -5,18 +5,13 @@ import Message from "@/components/Message";
 import { useEffect, useRef, useState } from "react";
 import { PaperAirplaneIcon } from "@heroicons/react/24/solid";
 import { handleSubmit } from "@/utils/chat";
-import { ArrowUturnLeftIcon, XMarkIcon } from "@heroicons/react/20/solid";
 
 interface Message {
   role: "user" | "assistant";
   content: string;
 }
 
-interface ChatProps {
-  setChatOn: (on: boolean) => any;
-}
-
-const Chat = ({ setChatOn }: ChatProps) => {
+const Chat = () => {
   const [history, setHistory] = useState<Message[]>([]);
   const [msgInput, setMsgInput] = useState<string>("");
   const [audio] = useState(new Audio("../../assets/message.mp3"));
@@ -67,13 +62,7 @@ const Chat = ({ setChatOn }: ChatProps) => {
   };
 
   return (
-    <div className="space-y-4 relative">
-      <button
-        onClick={() => setChatOn(false)}
-        className="absolute z-10 -left-10 top-0 h-6 w-6 flex bg-primary-200 bg-opacity-10 hover:border-2 rounded-full items-center justify-center"
-      >
-        <ArrowUturnLeftIcon className="h-4 w-4 text-ternary-500" />
-      </button>
+    <div className="space-y-4">
       <div
         ref={anchor}
         id="scrollbar"

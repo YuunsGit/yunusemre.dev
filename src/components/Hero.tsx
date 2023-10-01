@@ -73,7 +73,7 @@ const Hero = () => {
         } md:transition-all w-11/12`}
       >
         {chatOn ? (
-          <Chat setChatOn={(on: boolean) => setChatOn(on)} />
+          <Chat />
         ) : (
           <article className="text-center lg:text-left">
             <h1>

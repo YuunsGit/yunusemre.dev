@@ -16,7 +16,7 @@ const About = () => {
             Hi! I&apos;m Yunus Emre, a software engineer who specializes in
             creating websites and applications. I work as a Front-end Engineer
             at{" "}
-            <a className="underline" href="https://radity.com/">
+            <a className="underline" href="https://radity.com">
               Radity
             </a>
             . I like keeping up with the latest technology and design trends.

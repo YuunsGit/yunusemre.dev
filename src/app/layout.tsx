@@ -16,7 +16,13 @@ export const metadata: Metadata = {
       "Hi! I'm Yunus Emre, a software engineer who specializes in creating websites and applications. I like keeping up with the latest technology and design trends. Visit my portfolio to learn more about me.",
     type: "website",
     url: "https://www.yunusemre.dev",
-    images: "/assets/me.png",
+    images: {
+      href: "/assets/me.png",
+      url: "https://www.yunusemre.dev",
+      height: 250,
+      width: 250,
+      type: "image/png",
+    },
   },
   themeColor: "#678273",
   icons: [
@@ -57,6 +63,7 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <title>Yunus Emre Kepenek - Portfolio</title>
       </head>
       <body className="overflow-hidden">{children}</body>
       <Analytics />

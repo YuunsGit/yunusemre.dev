@@ -1,14 +1,12 @@
 import "@/app/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import React from "react";
-import { Metadata } from "next";
-import { Signika_Negative, Space_Grotesk } from "next/font/google";
+import {Metadata, Viewport} from "next";
 
 export const metadata: Metadata = {
   title: "Yunus Emre Kepenek - Portfolio",
   description:
     "Hi! I'm Yunus Emre, a software engineer who specializes in creating websites and applications. I like keeping up with the latest technology and design trends. Visit my portfolio to learn more about me.",
-  viewport: "width=device-width, initial-scale=1",
   metadataBase: new URL("https://www.yunusemre.dev"),
   openGraph: {
     title: "Yunus Emre Kepenek - Portfolio",
@@ -18,7 +16,6 @@ export const metadata: Metadata = {
     url: "https://www.yunusemre.dev",
     images: "/assets/me.png",
   },
-  themeColor: "#678273",
   icons: [
     {
       url: "/favicon.ico",
@@ -27,6 +24,10 @@ export const metadata: Metadata = {
     },
   ],
 };
+
+export const viewport: Viewport = {
+  themeColor: '#678273',
+}
 
 export default function RootLayout({
   children,

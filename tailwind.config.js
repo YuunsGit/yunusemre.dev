@@ -38,7 +38,8 @@ module.exports = {
         typescript: "#3178c6",
         react: "#61dafb",
         github: "#222",
-        cra: "#09d3ac"
+        cra: "#09d3ac",
+        redis: "#f01b1a",
       },
     },
   },

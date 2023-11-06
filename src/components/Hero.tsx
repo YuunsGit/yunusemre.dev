@@ -5,7 +5,6 @@ import Lottie from "lottie-react";
 import MeAnimation from "../../public/assets/me.json";
 
 import MeSvg from "../../public/assets/me.svg";
-import Instagram from "../../public/socials/instagram.svg";
 import LinkedIn from "../../public/socials/linkedin.svg";
 import Mail from "../../public/socials/mail.svg";
 import GitHub from "../../public/socials/github.svg";
@@ -20,11 +19,6 @@ const socials: { name: string; icon: React.FC; link: string }[] = [
     name: "GitHub",
     icon: GitHub,
     link: "https://github.com/YuunsGit",
-  },
-  {
-    name: "Instagram",
-    icon: Instagram,
-    link: "https://www.instagram.com/yemrekpnk/",
   },
   {
     name: "LinkedIn",

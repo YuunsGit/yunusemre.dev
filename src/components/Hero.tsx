@@ -89,16 +89,14 @@ const Hero = () => {
                 Designer
               </span>
             </h2>
-            {/*
-              <br />
-              <button
-                onClick={() => setChatOn(true)}
-                className="text-lg bg-primary-300 text-white px-4 py-2 rounded-lg hover:bg-primary-200 transition-all flex items-center gap-x-2 mx-auto lg:mx-0"
-              >
-                <ChatBubbleOvalLeftEllipsisIcon className="text-white h-6 w-6" />
-                <p>Talk to My AI Clone</p>
-              </button>
-             */}
+            <br />
+            <button
+              onClick={() => setChatOn(true)}
+              className="text-lg bg-primary-300 text-white px-4 py-2 rounded-lg hover:bg-primary-200 transition-all flex items-center gap-x-2 mx-auto lg:mx-0"
+            >
+              <ChatBubbleOvalLeftEllipsisIcon className="text-white h-6 w-6" />
+              <p>Talk to My AI Clone</p>
+            </button>
           </article>
         )}
       </div>

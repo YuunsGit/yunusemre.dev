@@ -4,7 +4,7 @@ import Response from "@/components/Response";
 import Message from "@/components/Message";
 import { useEffect, useRef, useState } from "react";
 import { PaperAirplaneIcon } from "@heroicons/react/24/solid";
-import { handleSubmit } from "@/utils/chat";
+import { handleSubmit, initChatBot } from "@/utils/chat";
 
 interface Message {
   role: "user" | "assistant";
@@ -17,12 +17,17 @@ const Chat = () => {
   const [audio] = useState(new Audio("../../assets/message.mp3"));
   const [generating, setGenerating] = useState(false);
   const [error, setError] = useState(false);
+  const [thread, setThread] = useState<any>(null);
 
   const anchor = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     scrollToBottom();
   });
+
+  useEffect(() => {
+    initChatBot().then((res: any) => setThread(res));
+  }, []);
 
   const scrollToBottom = () => {
     if (anchor?.current) {
@@ -44,7 +49,7 @@ const Chat = () => {
       { role: "assistant", content: "" } as Message,
     ];
     setHistory(newHistory);
-    handleSubmit(history, msgInput).then((res) => {
+    handleSubmit(thread, msgInput).then((res) => {
       if (res) {
         const currentHistory = [...newHistory];
         currentHistory[currentHistory.length - 1].content = res;
@@ -115,6 +120,20 @@ const Chat = () => {
             className="py-1 px-1.5 bg-primary-300 rounded-lg text-white hover:bg-primary-200 transition-all whitespace-nowrap"
           >
             Current job
+          </button>
+          <button
+            disabled={error}
+            onClick={() => setMsgInput("Do you have certifications?")}
+            className="py-1 px-1.5 bg-primary-300 rounded-lg text-white hover:bg-primary-200 transition-all whitespace-nowrap"
+          >
+            Certifications
+          </button>
+          <button
+            disabled={error}
+            onClick={() => setMsgInput("What's your favorite language?")}
+            className="py-1 px-1.5 bg-primary-300 rounded-lg text-white hover:bg-primary-200 transition-all whitespace-nowrap"
+          >
+            Favorite language
           </button>
         </div>
         <form

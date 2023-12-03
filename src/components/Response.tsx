@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Loading from "../../public/assets/loading.svg";
 import Image from "next/image";
@@ -19,9 +17,13 @@ const Response = ({ message, error }: { message: string; error?: boolean }) => {
           className={`whitespace-pre-line text-base md:text-lg ${
             error ? "text-red-500" : "text-ternary-500"
           }`}
-        >
-          {message}
-        </p>
+          dangerouslySetInnerHTML={{
+            __html: message.replaceAll(
+              /(\b(https?|ftp|file):\/\/([-A-Z0-9+&@#%?=~_|!:,.;]*)([-A-Z0-9+&@#%?\/=~_|!:,.;]*)[-A-Z0-9+&@#\/%=~_|])/gi,
+              "<a href='$1' target='_blank' rel='noopener noreferrer' class='bg-primary-200 rounded-lg px-2 text-white hover:bg-primary-300 transition-all'>$3</a>",
+            ),
+          }}
+        ></p>
       )}
     </div>
   );

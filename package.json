@@ -10,19 +10,19 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.15",
-    "@types/node": "^20.8.10",
-    "@types/react": "^18.2.34",
+    "@types/node": "^20.10.2",
+    "@types/react": "^18.2.41",
     "@types/react-dom": "^18.2.14",
     "@vercel/analytics": "^1.1.1",
     "eslint": "^8.53.0",
     "eslint-config-next": "^14.0.1",
     "lottie-react": "^2.4.0",
-    "next": "^14.0.1",
+    "next": "^14.0.3",
     "openai": "^4.15.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rss-parser": "^3.13.0",
-    "sharp": "^0.32.6",
+    "sharp": "^0.33.0",
     "typescript": "^5.2.2"
   },
   "devDependencies": {

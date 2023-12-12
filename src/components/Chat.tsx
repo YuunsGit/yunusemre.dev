@@ -18,6 +18,7 @@ const Chat = () => {
   const [generating, setGenerating] = useState(false);
   const [error, setError] = useState(false);
   const [thread, setThread] = useState<any>(null);
+  const [ip, setIp] = useState("1.1.1.1");
 
   const anchor = useRef<HTMLDivElement>(null);
 
@@ -27,6 +28,12 @@ const Chat = () => {
 
   useEffect(() => {
     initChatBot().then((res: any) => setThread(res));
+  }, []);
+
+  useEffect(() => {
+    fetch("https://freeipapi.com/api/json")
+      .then((res) => res.json())
+      .then((loc) => setIp(loc.ipAddress));
   }, []);
 
   const scrollToBottom = () => {
@@ -49,8 +56,14 @@ const Chat = () => {
       { role: "assistant", content: "" } as Message,
     ];
     setHistory(newHistory);
-    handleSubmit(thread, msgInput).then((res) => {
+    handleSubmit(thread, msgInput, ip).then((res) => {
       if (res) {
+        if (res.error) {
+          const currentHistory = [...newHistory];
+          currentHistory[currentHistory.length - 1].content = res.error;
+          setHistory(currentHistory);
+          return;
+        }
         const currentHistory = [...newHistory];
         currentHistory[currentHistory.length - 1].content = res;
         setHistory(currentHistory);

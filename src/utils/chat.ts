@@ -1,9 +1,30 @@
 "use server";
 
 import OpenAI from "openai";
+import { Ratelimit } from "@upstash/ratelimit";
+import { Redis } from "@upstash/redis";
 
-const handleSubmit = async (thread: any, content: string) => {
+const redis = new Redis({
+  // @ts-ignore
+  url: process.env["UPSTASH_REDIS_REST_URL"],
+  token: process.env["UPSTASH_REDIS_REST_TOKEN"],
+});
+
+const ratelimit = new Ratelimit({
+  redis: redis,
+  limiter: Ratelimit.fixedWindow(24, "24 h"),
+});
+
+const handleSubmit = async (thread: any, content: string, ip: string) => {
   try {
+    const { success } = await ratelimit.limit(ip);
+
+    if (!success) {
+      return {
+        error: "You asked enough questions today. Please come back tomorrow.",
+      };
+    }
+
     const openai = new OpenAI({
       apiKey: process.env["OPENAI_API_KEY"],
     });
@@ -35,7 +56,7 @@ const handleSubmit = async (thread: any, content: string) => {
 
     return lastMessage.content[0]["text"].value.replace(/ *【[^)]*】 */g, "");
   } catch (e) {
-    return "";
+    console.log(e);
   }
 };
 

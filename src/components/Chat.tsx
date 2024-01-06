@@ -143,7 +143,9 @@ const Chat = () => {
           </button>
           <button
             disabled={error}
-            onClick={() => setMsgInput("What's your favorite language?")}
+            onClick={() =>
+              setMsgInput("What's your favorite programming language?")
+            }
             className="py-1 px-1.5 bg-primary-300 rounded-lg text-white hover:bg-primary-200 transition-all whitespace-nowrap"
           >
             Favorite language

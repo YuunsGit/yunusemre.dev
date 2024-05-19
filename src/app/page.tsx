@@ -1,24 +1,11 @@
-import Header from "@/components/Header";
-import Main from "@/components/Main";
-import Footer from "@/components/Footer";
-import { Signika_Negative, Space_Grotesk } from "next/font/google";
-
-const signikaNegative = Signika_Negative({
-  subsets: ["latin"],
-  variable: "--font-overpass",
-});
-
-const grotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-grotesk",
-});
+import Hero from "@/components/hero";
+import Main from "@/components/main";
 
 export default async function Home() {
   return (
-    <>
-      <Header font={signikaNegative.variable} />
-      <Main font={signikaNegative.variable} />
-      <Footer font={grotesk.variable} />
-    </>
+    <div className="mx-auto flex min-h-screen max-w-screen-xl flex-col justify-center px-6 md:px-12 lg:flex-row lg:gap-20 xl:gap-20">
+      <Hero />
+      <Main />
+    </div>
   );
 }

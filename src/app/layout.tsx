@@ -1,15 +1,18 @@
 import "@/app/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import React from "react";
-import {Metadata, Viewport} from "next";
+import { Metadata, Viewport } from "next";
+import { Open_Sans } from "next/font/google";
+import { Providers } from "@/components/providers";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Yunus Emre Kepenek - Portfolio",
+  title: "Yunus Emre Kepenek - Software Engineer",
   description:
     "Hi! I'm Yunus Emre, a software engineer who specializes in creating websites and applications. I like keeping up with the latest technology and design trends. Visit my portfolio to learn more about me.",
   metadataBase: new URL("https://www.yunusemre.dev"),
   openGraph: {
-    title: "Yunus Emre Kepenek - Portfolio",
+    title: "Yunus Emre Kepenek - Software Engineer",
     description:
       "Hi! I'm Yunus Emre, a software engineer who specializes in creating websites and applications. I like keeping up with the latest technology and design trends. Visit my portfolio to learn more about me.",
     type: "website",
@@ -26,8 +29,14 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#678273',
-}
+  themeColor: "#678273",
+};
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-opensans",
+});
 
 export default function RootLayout({
   children,
@@ -35,32 +44,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
+    <html lang="en" className="scroll-smooth bg-slate-50">
+      <body
+        className={cn(openSans.variable, "bg-slate-50 font-body antialiased")}
+      >
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "<!-- Hey there! Looks like you found my secret. There you go, you deserve it: secret.yunusemre.dev -->",
+          }}
         />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-        <title>Yunus Emre Kepenek - Portfolio</title>
-      </head>
-      <body className="overflow-hidden">{children}</body>
+        <Providers>{children}</Providers>
+      </body>
       <Analytics />
     </html>
   );

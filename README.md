@@ -1,8 +1,8 @@
 <div align="center">
-  <a href="https://www.yunusemre.dev" target="_blank"><img alt="Logo" src="https://user-images.githubusercontent.com/42357900/224476515-f035b8a0-b821-4667-a14b-5e41f480f36e.gif" width="250" /></a>
+  <a href="https://www.yunusemre.dev" target="_blank"><img alt="Logo" src="https://github.com/YuunsGit/yunusemre.dev/assets/42357900/f9675d96-5364-4f00-b2eb-89a2a42b2bd8" width="200" /></a>
 </div>
 <h1 align="center">
-  yunusemre.dev - v2
+  yunusemre.dev - v3
 </h1>
 <p align="center">
   Well optimized second version of <a href="https://www.yunusemre.dev" target="_blank">yunusemre.dev</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
@@ -20,4 +20,5 @@
   <img alt="Vercel" src="https://user-images.githubusercontent.com/42357900/219872747-281e8987-9cbd-4cd9-b068-f0e8e23ad2bf.png" height="75" />
   <img alt="Next.js" src="https://user-images.githubusercontent.com/42357900/218829328-e4d13281-93bf-488d-a36e-29a8c44580e1.svg" height="75" />
 </div>
+
 

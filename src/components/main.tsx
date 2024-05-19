@@ -131,10 +131,10 @@ export default function Main() {
           hobby projects with Arduino.
         </p>
         <p className="mt-3 text-skeptic-900">
-          Now, I've been developing user-friendly websites and full-stack web
-          applications for <strong className="font-bold">over 2 years</strong>{" "}
-          using modern technologies. I contributed to the development and
-          deployment of{" "}
+          Now, I&apos;ve been developing user-friendly websites and full-stack
+          web applications for{" "}
+          <strong className="font-bold">over 2 years</strong> using modern
+          technologies. I contributed to the development and deployment of{" "}
           <strong className="font-bold">high-end insurance portals</strong> and{" "}
           <strong className="font-bold">IaaS-PaaS cloud applications</strong>{" "}
           serving thousands of users.
@@ -212,7 +212,7 @@ export default function Main() {
         aria-label="Projects I've worked on"
       >
         <h2 className="text-2xl font-bold tracking-tight">
-          Some Things I've Built
+          Some Things I&apos;ve Built
         </h2>
         <ul className="mt-8 flex flex-col gap-14 text-skeptic-900">
           {projects.map((project) => (

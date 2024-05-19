@@ -17,7 +17,6 @@ export const metadata: Metadata = {
       "Hi! I'm Yunus Emre, a software engineer who specializes in creating websites and applications. I like keeping up with the latest technology and design trends. Visit my portfolio to learn more about me.",
     type: "website",
     url: "https://www.yunusemre.dev",
-    images: "/assets/me.png",
   },
   icons: [
     {
@@ -48,12 +47,6 @@ export default function RootLayout({
       <body
         className={cn(openSans.variable, "bg-slate-50 font-body antialiased")}
       >
-        <script
-          dangerouslySetInnerHTML={{
-            __html:
-              "<!-- Hey there! Looks like you found my secret. There you go, you deserve it: secret.yunusemre.dev -->",
-          }}
-        />
         <Providers>{children}</Providers>
       </body>
       <Analytics />

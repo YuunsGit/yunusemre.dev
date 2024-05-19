@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import Sparkles from "@/assets/icons/sparkles.svg";
 import { ChatContext } from "@/providers/chat-provider";
 import { useRouter } from "next/navigation";
+import Arrow from "@/assets/icons/arrow.svg";
 
 export default function ButtonGroup() {
   const { setChatOpen } = useContext(ChatContext);
@@ -18,7 +19,7 @@ export default function ButtonGroup() {
       <Button
         asChild={false}
         size="sm"
-        className="bg-skeptic-500 hover:bg-skeptic-400"
+        className="bg-skeptic-500 text-white hover:bg-skeptic-400"
         onClick={() => {
           setChatOpen(true);
           router.push("#chat");
@@ -30,9 +31,9 @@ export default function ButtonGroup() {
         asChild
         size="sm"
         variant="outline"
-        className="text-skeptic-700 hover:bg-slate-100 hover:text-skeptic-800"
+        className="group text-skeptic-700 hover:bg-slate-100 hover:text-skeptic-800"
       >
-        <Link href="/resume.pdf" target="_blank">
+        <Link href="/resume.pdf" prefetch={false} target="_blank">
           Resume
         </Link>
       </Button>

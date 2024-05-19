@@ -49,9 +49,12 @@ const messageSchema = z
 
 export default function Chat() {
   const { chatOpen, setChatOpen } = useContext(ChatContext);
+
   const scrollBottomAnchor = useRef<HTMLDivElement>(null);
   const [rateLimited, setRateLimited] = useState(false);
   const [ip, setIp] = useState("1.1.1.1");
+
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const {
     status,
@@ -190,7 +193,10 @@ export default function Chat() {
                     size="sm"
                     variant="outline"
                     className="h-7 text-xs text-skeptic-900"
-                    onClick={() => setInput(q.question)}
+                    onClick={() => {
+                      setInput(q.question);
+                      inputRef.current?.focus();
+                    }}
                   >
                     {q.buttonName}
                   </Button>
@@ -206,6 +212,7 @@ export default function Chat() {
             >
               <Input
                 value={input}
+                ref={inputRef}
                 onChange={(event) =>
                   event.target.value.length < 80 && handleInputChange(event)
                 }

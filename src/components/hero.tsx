@@ -7,7 +7,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 import MeSvg from "@/assets/me.svg?url";
-import PPMask from "@/assets/ppMask.png";
+import PPMask from "@/assets/ppmask.png";
 
 import GitHub from "@/assets/socials/github.svg";
 import LinkedIn from "@/assets/socials/linkedin.svg";

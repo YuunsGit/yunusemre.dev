@@ -1,6 +1,6 @@
 "use client";
 
-import React, { SVGProps, useContext, useEffect, useState } from "react";
+import React, { SVGProps, useEffect, useState } from "react";
 import Lottie from "lottie-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -14,7 +14,6 @@ import LinkedIn from "@/assets/socials/linkedin.svg";
 import Mail from "@/assets/socials/mail.svg";
 
 import animationData from "@/assets/me.json";
-import { ChatContext } from "@/providers/chat-provider";
 
 const socials: {
   name: string;

@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 
 import MeSvg from "@/assets/me.svg?url";
 import PPMask from "@/assets/ppmask.png";
+import GoneForGood from "@/assets/gone-for-good.svg";
 
 import GitHub from "@/assets/socials/github.svg";
 import LinkedIn from "@/assets/socials/linkedin.svg";
@@ -151,16 +152,23 @@ export default function Hero() {
               className={cn(
                 "change-bg z-10 origin-bottom cursor-pointer select-none overflow-hidden transition-all",
                 gone
-                  ? "translate-y-full"
+                  ? "translate-y-full rotate-2 duration-700"
                   : "hover:translate-y-0.5 active:translate-y-1 active:rotate-1",
               )}
               animationData={animationData}
               onLoadedImages={() => setLoaded(true)}
               onClick={() => {
-                if (clicks < CLICKS_TO_DIALOG) setClicks((prev) => prev + 1);
+                if (clicks < CLICKS_TO_DIALOG && !gone)
+                  setClicks((prev) => prev + 1);
               }}
               loop={true}
             />
+            {gone && (
+              <GoneForGood
+                aria-hidden="true"
+                className="absolute bottom-7 left-0 right-0 -z-10 mx-auto size-28"
+              />
+            )}
           </figure>
         </div>
         <div className="mt-10 text-skeptic-800">

@@ -74,6 +74,7 @@ const projects = [
     title: "Ankara Science University Promo Site",
     link: "https://tanitim.ankarabilim.edu.tr/",
     thumbnail: tanitim,
+    wip: true,
     description:
       "Website built for the promotion of Ankara Science University, featuring a context-aware AI assistant powered by OpenAI's GPT-3.5 model and Assistants API.",
     skills: [
@@ -89,6 +90,7 @@ const projects = [
     title: "Self Shelf Library App",
     link: "https://ss.yunusemre.dev/",
     thumbnail: selfshelf,
+    wip: false,
     description:
       "Simple library application utilizing full-stack web development skills, featuring a responsive design and a user-friendly interface.",
     skills: [
@@ -104,6 +106,7 @@ const projects = [
     title: "Emogi Emotion Sharing App",
     link: "https://emogi.yunusemre.dev/",
     thumbnail: emogi,
+    wip: false,
     description:
       "A small app that allows users to share their emotions with emojis, built as a demonstration of the in-memory database Redis.",
     skills: ["TypeScript", "React", "Next.js", "Tailwind", "Redis"],
@@ -112,6 +115,7 @@ const projects = [
     title: "Conversions PDF Editor",
     link: "https://conversions.yunusemre.dev/",
     thumbnail: conversions,
+    wip: false,
     description:
       "PDF editor that allows users to split and rotate PDF files. This was my first project using React, which helped me grasp the complex concepts of React.",
     skills: ["JavaScript", "React", "CRA 😳", "Tailwind"],
@@ -224,13 +228,19 @@ export default function Main() {
                 className="absolute inset-x-0 inset-y-0 -z-10 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:scale-x-105 lg:group-hover:scale-y-125 lg:group-hover:bg-skeptic-200"
                 aria-hidden="true"
               />
-              <div className="flex-shrink-0">
+              <div
+                className={cn(
+                  "relative h-fit flex-shrink-0 rounded",
+                  project.wip &&
+                    "after:bg-wip-overlay after:absolute after:inset-0 after:z-10 after:flex after:size-full after:items-center after:justify-center after:rounded after:bg-opacity-50 after:text-xl after:font-bold after:tracking-wider after:text-skeptic-50 after:transition-all after:content-['—_WIP_—'] lg:group-hover:after:opacity-0",
+                )}
+              >
                 <Image
                   src={project.thumbnail}
                   alt={project.title}
                   width={180}
                   quality={100}
-                  className="width-auto rounded border border-skeptic-400"
+                  className="relative rounded border border-skeptic-400"
                 />
               </div>
               <div>
@@ -243,7 +253,7 @@ export default function Main() {
                     <span>{project.title}</span>
                     <Arrow className="my-auto ml-1.5 inline-block size-3 stroke-[4px] transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                     <span
-                      className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                      className="absolute -inset-x-4 -inset-y-2.5 z-20 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
                       aria-hidden="true"
                     />
                   </Link>

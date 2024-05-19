@@ -21,6 +21,10 @@ const config = {
       fontFamily: {
         body: ["var(--font-opensans)"],
       },
+      backgroundImage: {
+        "wip-overlay":
+          "radial-gradient(circle, rgba(49,100,72,0.85) 0%, rgba(49,100,72,0.6))",
+      },
       colors: {
         skeptic: {
           "50": "#f3faf6",

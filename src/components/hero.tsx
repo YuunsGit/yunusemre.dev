@@ -133,7 +133,7 @@ export default function Hero() {
             {dialogs[dialog]}
           </p>
           <figure
-            className="size-72 bg-skeptic-200"
+            className="size-60 bg-skeptic-200 sm:size-72"
             style={{
               maskImage: `url(${PPMask.src})`,
               maskSize: "contain",
@@ -145,7 +145,7 @@ export default function Hero() {
                 src={MeSvg}
                 alt="Picture of the author"
                 priority
-                className="absolute size-72"
+                className="absolute size-60 sm:size-72"
               />
             )}
             <Lottie
@@ -166,7 +166,7 @@ export default function Hero() {
             {gone && (
               <GoneForGood
                 aria-hidden="true"
-                className="absolute bottom-7 left-0 right-0 -z-10 mx-auto size-28"
+                className="absolute bottom-7 left-0 right-0 -z-10 mx-auto size-24 sm:size-28"
               />
             )}
           </figure>

@@ -54,8 +54,6 @@ export default function Chat() {
   const [rateLimited, setRateLimited] = useState(false);
   const [ip, setIp] = useState("1.1.1.1");
 
-  const inputRef = useRef<HTMLInputElement>(null);
-
   const {
     status,
     messages,
@@ -135,7 +133,7 @@ export default function Chat() {
             </Button>
             <div
               ref={scrollBottomAnchor}
-              className="chatbox scrolling-touch scrolling-gpu relative mr-auto h-72 w-full space-y-4 overflow-y-auto overscroll-auto direction-reverse"
+              className="chatbox scrolling-touch scrolling-gpu relative mr-auto h-96 w-full space-y-4 overflow-y-auto overscroll-auto direction-reverse md:h-72"
             >
               <div
                 className="sticky top-0 h-12 w-full bg-gradient-to-b from-slate-50 to-transparent"
@@ -199,7 +197,6 @@ export default function Chat() {
                     className="h-7 text-xs text-skeptic-900"
                     onClick={() => {
                       setInput(q.question);
-                      inputRef.current?.focus();
                     }}
                     aria-label={`Ask ${q.buttonName}`}
                   >
@@ -217,7 +214,6 @@ export default function Chat() {
             >
               <Input
                 value={input}
-                ref={inputRef}
                 onChange={(event) =>
                   event.target.value.length < 80 && handleInputChange(event)
                 }

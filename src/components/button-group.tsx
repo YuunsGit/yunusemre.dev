@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import Sparkles from "@/assets/icons/sparkles.svg";
 import { ChatContext } from "@/providers/chat-provider";
 import { useRouter } from "next/navigation";
-import Arrow from "@/assets/icons/arrow.svg";
 
 export default function ButtonGroup() {
   const { setChatOpen } = useContext(ChatContext);

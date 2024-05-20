@@ -228,13 +228,15 @@ export default function Main() {
                 className="absolute inset-x-0 inset-y-0 -z-10 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:scale-x-105 lg:group-hover:scale-y-125 lg:group-hover:bg-skeptic-200"
                 aria-hidden="true"
               />
-              <div
-                className={cn(
-                  "relative h-fit flex-shrink-0 rounded",
-                  project.wip &&
-                    "after:bg-wip-overlay after:absolute after:inset-0 after:z-10 after:flex after:size-full after:items-center after:justify-center after:rounded after:bg-opacity-50 after:text-xl after:font-bold after:tracking-wider after:text-skeptic-50 after:transition-all after:content-['—_WIP_—'] lg:group-hover:after:opacity-0",
+              <div className="relative size-fit flex-shrink-0 rounded">
+                {project.wip && (
+                  <div
+                    className="absolute inset-0 z-10 flex size-full items-center justify-center rounded bg-opacity-50 bg-wip-overlay text-xl font-bold tracking-wider text-skeptic-50 transition-all lg:group-hover:opacity-0"
+                    aria-label="Work in progress"
+                  >
+                    &mdash; WIP &mdash;
+                  </div>
                 )}
-              >
                 <Image
                   src={project.thumbnail}
                   alt={project.title}

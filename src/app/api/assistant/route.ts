@@ -18,6 +18,8 @@ const rateLimit = new Ratelimit({
   analytics: true,
 });
 
+export const runtime = "edge";
+
 export async function POST(req: Request) {
   // Parse the request body
   const input: {

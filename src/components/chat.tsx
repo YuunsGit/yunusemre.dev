@@ -129,8 +129,9 @@ export default function Chat() {
               className="absolute -top-10 left-[calc(100%-2rem)] z-10 hover:bg-slate-200 lg:left-[calc(100%+1rem)] lg:top-0"
               variant="ghost"
               onClick={() => setChatOpen(false)}
+              aria-label="Close chat"
             >
-              <XMark className="size-4" />
+              <XMark className="size-4" aria-hidden="true" />
             </Button>
             <div
               ref={scrollBottomAnchor}
@@ -186,7 +187,10 @@ export default function Chat() {
                   <Loading className="ml-4 size-10" />
                 )}
             </div>
-            <ul className="questions mt-8 flex gap-1 overflow-x-auto overflow-y-visible">
+            <ul
+              className="questions mt-8 flex gap-1 overflow-x-auto overflow-y-visible"
+              aria-label="Premade questions"
+            >
               {premadeQuestions.map((q) => (
                 <li key={q.buttonName}>
                   <Button
@@ -197,6 +201,7 @@ export default function Chat() {
                       setInput(q.question);
                       inputRef.current?.focus();
                     }}
+                    aria-label={`Ask ${q.buttonName}`}
                   >
                     {q.buttonName}
                   </Button>
@@ -227,8 +232,9 @@ export default function Chat() {
                 disabled={
                   !input || rateLimited || !!error || status === "in_progress"
                 }
+                aria-label="Send message"
               >
-                <Plane className="size-5" />
+                <Plane className="size-5" aria-hidden="true" />
               </Button>
             </form>
           </div>

@@ -107,7 +107,7 @@ export default function Chat() {
       {chatOpen && (
         <motion.section
           id="chat"
-          className="scroll-mt-16 overflow-visible"
+          className="relative z-0 scroll-mt-16 overflow-visible before:absolute before:-inset-6 before:top-0 before:-z-10 before:rounded-3xl before:bg-slate-200 before:content-['']"
           aria-label="Yunus Emre AI clone"
           initial={{ opacity: 0, height: 0, marginBottom: 0 }}
           animate={{
@@ -124,7 +124,7 @@ export default function Chat() {
           <div className="relative flex flex-col justify-between">
             <Button
               size="icon"
-              className="absolute -top-10 left-[calc(100%-2rem)] z-10 hover:bg-slate-200 lg:left-[calc(100%+1rem)] lg:top-0"
+              className="absolute -top-12 left-[calc(100%-1rem)] z-10 rounded-full hover:bg-slate-200 xl:left-[calc(100%+2rem)] xl:top-0"
               variant="ghost"
               onClick={() => setChatOpen(false)}
               aria-label="Close chat"
@@ -136,7 +136,7 @@ export default function Chat() {
               className="chatbox scrolling-touch scrolling-gpu relative mr-auto h-96 w-full space-y-4 overflow-y-auto overscroll-auto direction-reverse md:h-72"
             >
               <div
-                className="sticky top-0 h-12 w-full bg-gradient-to-b from-slate-50 to-transparent"
+                className="sticky top-0 h-12 w-full  from-slate-200 to-transparent"
                 aria-hidden="true"
               />
               <div className="mr-auto w-10/12 max-w-fit rounded-2xl rounded-tl-none bg-skeptic-400 px-5 py-2.5 transition-all">
@@ -148,7 +148,7 @@ export default function Chat() {
                 if (message.role === "user") {
                   return (
                     <div
-                      className="ml-auto w-8/12 max-w-fit rounded-2xl rounded-br-none bg-slate-200 px-5 py-2.5"
+                      className="ml-auto w-8/12 max-w-fit rounded-2xl rounded-br-none bg-slate-300 px-5 py-2.5"
                       key={message.id}
                     >
                       <p className="text-sm font-medium text-skeptic-900">

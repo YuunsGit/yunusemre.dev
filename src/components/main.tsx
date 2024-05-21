@@ -225,7 +225,7 @@ export default function Main() {
               key={project.title}
             >
               <div
-                className="absolute inset-x-0 inset-y-0 -z-10 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:scale-x-105 lg:group-hover:scale-y-125 lg:group-hover:bg-skeptic-200"
+                className="absolute inset-0 -z-10 hidden rounded-md transition-all motion-reduce:transition-none lg:block lg:group-hover:-inset-5 lg:group-hover:bg-skeptic-200"
                 aria-hidden="true"
               />
               <div className="relative size-fit flex-shrink-0 rounded">

@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://www.yunusemre.dev/sitemap.xml
-Host: https://www.yunusemre.dev

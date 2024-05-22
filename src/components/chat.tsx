@@ -28,7 +28,7 @@ const premadeQuestions = [
     question: "Tell me about your work experience.",
   },
   {
-    buttonName: "Pojects",
+    buttonName: "Projects",
     question: "Tell me about your projects.",
   },
   {

@@ -15,6 +15,7 @@ import LinkedIn from "@/assets/socials/linkedin.svg";
 import Mail from "@/assets/socials/mail.svg";
 
 import animationData from "@/assets/me.json";
+import increasePokeCounter from "@/app/action";
 
 const socials: {
   name: string;
@@ -158,8 +159,10 @@ export default function Hero() {
               animationData={animationData}
               onLoadedImages={() => setLoaded(true)}
               onClick={() => {
-                if (clicks < CLICKS_TO_DIALOG && !gone)
+                if (clicks < CLICKS_TO_DIALOG && !gone) {
                   setClicks((prev) => prev + 1);
+                  increasePokeCounter();
+                }
               }}
               loop={true}
             />

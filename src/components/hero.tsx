@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-import MeSvg from "@/assets/me.svg?url";
+import MeSvg from "@/assets/me.svg";
 import PPMask from "@/assets/ppmask.png";
 import GoneForGood from "@/assets/gone-for-good.svg";
 
@@ -79,11 +79,9 @@ const dialogs = [
   "Are you having fun?",
   "..",
   "...",
-  "....",
   "I can do this all day.",
   ".....",
   "......",
-  ".......",
   "OKAY, you win. I give up.",
 ];
 
@@ -142,19 +140,14 @@ export default function Hero() {
             }}
           >
             {loaded || (
-              <Image
-                src={MeSvg}
-                alt="Picture of the author"
-                priority
-                className="absolute size-60 sm:size-72"
-              />
+              <MeSvg className="me-svg absolute size-60 translate-y-0.5 sm:size-72" />
             )}
             <Lottie
               className={cn(
-                "change-bg z-10 origin-bottom cursor-pointer select-none overflow-hidden transition-all",
+                "change-bg z-10 origin-bottom translate-y-0.5 cursor-pointer select-none overflow-hidden transition-all",
                 gone
                   ? "translate-y-full rotate-2 duration-700"
-                  : "hover:translate-y-0.5 active:translate-y-1 active:rotate-1",
+                  : "hover:translate-y-1 active:translate-y-1.5 active:rotate-1",
               )}
               animationData={animationData}
               onLoadedImages={() => setLoaded(true)}

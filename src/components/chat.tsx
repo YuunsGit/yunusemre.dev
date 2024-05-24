@@ -135,10 +135,7 @@ export default function Chat() {
               ref={scrollBottomAnchor}
               className="chatbox scrolling-touch scrolling-gpu relative mr-auto h-96 w-full space-y-4 overflow-y-auto overscroll-auto direction-reverse md:h-72"
             >
-              <div
-                className="sticky top-0 h-12 w-full  from-slate-200 to-transparent"
-                aria-hidden="true"
-              />
+              <div className="sticky top-0 h-12 w-full" aria-hidden="true" />
               <div className="mr-auto w-10/12 max-w-fit rounded-2xl rounded-tl-none bg-skeptic-400 px-5 py-2.5 transition-all">
                 <p className="text-sm font-medium text-white">
                   Hey! What would you like to learn about me?

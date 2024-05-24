@@ -196,7 +196,7 @@ export default function Hero() {
       <ul className="mt-6 flex gap-4" aria-label="Social media links">
         {socials.map((social, index) => (
           <li key={index}>
-            <Link href={social.link} aria-label={`Follow on ${social.name}`}>
+            <Link href={social.link} target="_blank" rel="noreferrer noopener" aria-label={`Follow on ${social.name}`}>
               <social.icon className="size-6 fill-skeptic-800 hover:fill-skeptic-600" />
             </Link>
           </li>

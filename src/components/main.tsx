@@ -130,14 +130,14 @@ export default function Main() {
       <section id="about" className="mb-24 scroll-mt-16" aria-label="About me">
         <h2 className="text-2xl font-bold tracking-tight">About Me</h2>
         <p className="mt-5 text-skeptic-900">
-          Nearly 10 years ago, in 2015, I leapt into the software development
-          world by developing simple Minecraft plugins with Java and building
+          In 2016, I leapt into the world of software development
+          by developing simple Minecraft plugins with Java and building
           hobby projects with Arduino.
         </p>
         <p className="mt-3 text-skeptic-900">
           Now, I&apos;ve been developing user-friendly websites and full-stack
-          web applications for{" "}
-          <strong className="font-bold">over 2 years</strong> using modern
+          web applications for more than{" "}
+          <strong className="font-bold"> 2 years</strong> using modern
           technologies. I contributed to the development and deployment of{" "}
           <strong className="font-bold">high-end insurance portals</strong> and{" "}
           <strong className="font-bold">IaaS-PaaS cloud applications</strong>{" "}

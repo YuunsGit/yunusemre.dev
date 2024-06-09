@@ -26,13 +26,12 @@ const experience = [
       end: "Present",
     },
     description:
-      "Build, style, and ship high-quality insurance portals for a diverse array of clients including THREE Insurance by Berkshire Hathaway. Entirely redesigned and developed Radity's website which resulted in an increase in user engagement.",
+      "Builds, styles, and ships high-quality insurance portals for a diverse array of clients including THREE Insurance by Berkshire Hathaway. Works alongside product and project managers, designers, and other engineers on an agile cadence.",
     skills: [
       "JavaScript",
       "TypeScript",
       "React",
       "Next.js",
-      "WordPress",
       "Material UI",
       "Figma",
     ],
@@ -43,7 +42,7 @@ const experience = [
     link: "https://dtcloudnow.com/",
     location: "Antalya, Türkiye",
     date: {
-      start: "Apr 2023",
+      start: "Jan 2023",
       end: "Sep 2023",
     },
     description:

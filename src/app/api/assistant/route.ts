@@ -15,7 +15,6 @@ const redis = new Redis({
 const rateLimit = new Ratelimit({
   redis: redis,
   limiter: Ratelimit.fixedWindow(24, "24 h"),
-  analytics: true,
 });
 
 export const runtime = "edge";

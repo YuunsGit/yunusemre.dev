@@ -20,6 +20,7 @@ const experience = [
     title: "Full Stack Engineer",
     company: "Radity",
     link: "https://radity.com/",
+    location: "Zürich, Switzerland",
     date: {
       start: "Sep 2023",
       end: "Present",
@@ -40,6 +41,7 @@ const experience = [
     title: "Full Stack Engineer",
     company: "DT Cloud",
     link: "https://dtcloudnow.com/",
+    location: "Antalya, Türkiye",
     date: {
       start: "Apr 2023",
       end: "Sep 2023",
@@ -59,6 +61,7 @@ const experience = [
     title: "OOP & Java Mentor",
     company: "Ankara Science University",
     link: "https://ankarabilim.edu.tr/",
+    location: "Ankara, Türkiye",
     date: {
       start: "Mar 2022",
       end: "Jun 2022",
@@ -167,25 +170,33 @@ export default function Main() {
               )}
               key={index}
             >
-              <div className="flex flex-col-reverse justify-between gap-y-1 sm:flex-row">
+              <div className="flex flex-col-reverse justify-between gap-y-2 sm:flex-row">
                 <h3 className="relative flex flex-col leading-snug">
-                  <span className="font-bold">{exp.title}</span>
+                  <span className="text-lg font-bold leading-none tracking-tight">
+                    {exp.title}
+                  </span>
                   <Link
                     href={exp.link}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="group font-medium hover:text-skeptic-700"
+                    className="group font-medium tracking-tight hover:text-skeptic-700"
                   >
                     {exp.company}
                     <Arrow className="my-auto ml-1.5 inline-block size-3 stroke-[3px] transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                   </Link>
                 </h3>
-                <aside
-                  className="flex-shrink-0"
-                  aria-label={`Worked from ${exp.date.start} to ${exp.date.end}`}
-                >
-                  <p className="text-xs text-skeptic-800 sm:text-sm">
+                <aside className="flex-shrink-0">
+                  <p
+                    aria-label={`Worked from ${exp.date.start} to ${exp.date.end}`}
+                    className="text-xs font-semibold text-skeptic-800 sm:text-end sm:text-sm"
+                  >
                     {exp.date.start} &mdash; {exp.date.end}
+                  </p>
+                  <p
+                    aria-label={`Located in ${exp.location}`}
+                    className="text-xs text-skeptic-800 sm:text-end sm:text-sm"
+                  >
+                    {exp.location}
                   </p>
                 </aside>
               </div>

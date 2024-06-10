@@ -137,7 +137,7 @@ export default function Main() {
           hobby projects with Arduino.
         </p>
         <p className="mt-3 text-skeptic-900">
-          Now, I&apos;ve been developing user-friendly websites and full-stack
+          Now, as a software engineering graduate, I&apos;ve been developing user-friendly websites and full-stack
           web applications for more than{" "}
           <strong className="font-bold"> 2 years</strong> using modern
           technologies. I contributed to the development and deployment of{" "}

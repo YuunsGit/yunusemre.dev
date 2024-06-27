@@ -20,5 +20,12 @@
   <img alt="Vercel" src="https://user-images.githubusercontent.com/42357900/219872747-281e8987-9cbd-4cd9-b068-f0e8e23ad2bf.png" height="75" />
   <img alt="Next.js" src="https://user-images.githubusercontent.com/42357900/218829328-e4d13281-93bf-488d-a36e-29a8c44580e1.svg" height="75" />
 </div>
-
-
+<br/>
+<div>
+  <h2 align="center">
+    Attribution is required!
+  </h2>
+  <p align="center">
+    If you use any material from my portfolio, please give me proper credit by linking back to <a href="https://www.yunusemre.dev" target="_blank">yunusemre.dev</a>. Thanks!
+  </p>
+</div>

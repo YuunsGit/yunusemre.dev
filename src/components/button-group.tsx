@@ -24,7 +24,7 @@ export default function ButtonGroup() {
           router.push("#chat");
         }}
       >
-        <Sparkles className="mr-2 size-5 fill-current" /> AI Clone
+        <Sparkles aria-hidden className="mr-2 size-5 fill-current" /> Yunus AI
       </Button>
       <Button
         asChild

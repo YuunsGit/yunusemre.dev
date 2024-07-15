@@ -10,6 +10,8 @@ import tanitim from "@/assets/projects/tanitim.png";
 import selfshelf from "@/assets/projects/selfshelf.png";
 import emogi from "@/assets/projects/emogi.png";
 import conversions from "@/assets/projects/conversions.png";
+import uavapi from "@/assets/projects/uavapi.png";
+import uavapp from "@/assets/projects/uavapp.png";
 
 import Arrow from "@/assets/icons/arrow.svg";
 import Chat from "@/components/chat";
@@ -76,7 +78,7 @@ const projects = [
     title: "Ankara Science University Promo Site",
     link: "https://tanitim.ankarabilim.edu.tr/",
     thumbnail: tanitim,
-    wip: true,
+    wip: false,
     description:
       "Website built for the promotion of Ankara Science University, featuring a context-aware AI assistant powered by OpenAI's GPT-3.5 model and Assistants API.",
     skills: [
@@ -103,6 +105,24 @@ const projects = [
       "PostgreSQL",
       "Prisma",
     ],
+  },
+  {
+    title: "UAV Monitoring Dashboard",
+    link: "https://uav.yunusemre.dev/",
+    thumbnail: uavapp,
+    wip: false,
+    description:
+      "UAV monitoring application that allows users to track and monitor UAVs. Utilizes the UAV Monitoring API to assign tasks to UAVs.",
+    skills: ["TypeScript", "Vue", "Tailwind", "TanStack"],
+  },
+  {
+    title: "UAV Monitoring API",
+    link: "https://github.com/YuunsGit/uav-backend",
+    thumbnail: uavapi,
+    wip: false,
+    description:
+      "UAV monitoring API that allows users to assign tasks to UAVs and execute them. Designed to be used with the UAV Monitoring Dashboard.",
+    skills: ["Python", "Flask", "SQLite", "SQLAlchemy", "MinIO"],
   },
   {
     title: "Emogi Emotion Sharing App",
@@ -132,13 +152,13 @@ export default function Main() {
       <section id="about" className="mb-24 scroll-mt-16" aria-label="About me">
         <h2 className="text-2xl font-bold tracking-tight">About Me</h2>
         <p className="mt-5 text-skeptic-900">
-          In 2016, I leapt into the world of software development
-          by developing simple Minecraft plugins with Java and building
-          hobby projects with Arduino.
+          In 2016, I leapt into the world of software development by developing
+          simple Minecraft plugins with Java and building hobby projects with
+          Arduino.
         </p>
         <p className="mt-3 text-skeptic-900">
-          Now, as a software engineering graduate, I&apos;ve been developing user-friendly websites and full-stack
-          web applications for more than{" "}
+          Now, as a software engineering graduate, I&apos;ve been developing
+          user-friendly websites and full-stack web applications for more than{" "}
           <strong className="font-bold"> 2 years</strong> using modern
           technologies. I contributed to the development and deployment of{" "}
           <strong className="font-bold">high-end insurance portals</strong> and{" "}
